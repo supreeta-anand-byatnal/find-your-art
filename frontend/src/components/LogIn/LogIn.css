@@ -1,16 +1,16 @@
 .login {
   background-color: #ffffff;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   width: 100%;
 }
 
-.login .side-image {
+.side-image {
+  flex: 1;
   height: 100vh;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  width: 50%;
+  background-image: url('../../assets/side-image.png');
+}
+
+.login-panel {
+  background-color: red;
+  flex: 1;
 }
