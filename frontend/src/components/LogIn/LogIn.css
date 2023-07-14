@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .login {
   background-color: #ffffff;
   display: flex;
@@ -8,9 +12,49 @@
   flex: 1;
   height: 100vh;
   background-image: url('../../assets/side-image.png');
+  background-size: cover;
 }
 
 .login-panel {
-  background-color: red;
+  background-color: #ffffff;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.login-form {
+  width: 400px;
+}
+
+form > label {
+}
+
+form > input {
+  width: 100%;
+  border: 1px solid;
+  border-color: #e7e6e4;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+form > p {
+  width: 100%;
+  text-align: end;
+}
+
+button {
+  background-color: #494847;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  border-radius: 2rem;
+  border: none;
+}
+
