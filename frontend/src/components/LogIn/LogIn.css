@@ -28,9 +28,6 @@
   width: 400px;
 }
 
-form > label {
-}
-
 form > input {
   width: 100%;
   border: 1px solid;
@@ -56,5 +53,16 @@ button {
   width: 100%;
   border-radius: 2rem;
   border: none;
+}
+
+#separator {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #e7e6e4;
+  line-height: 0.1rem;
+}
+#separator > span {
+  background: #ffffff;
+  padding: 0 1rem;
 }
 

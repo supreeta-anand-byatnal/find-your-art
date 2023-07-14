@@ -15,6 +15,7 @@ export default function LogIn() {
             <input></input>
             <p>Forgot password?</p>
             <button>Log in</button>
+            <p id="separator"><span>OR</span></p>
             <button>Log in</button>
             <button>Log in</button>
             <button>Log in</button>
