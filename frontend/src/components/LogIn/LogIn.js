@@ -16,9 +16,9 @@ export default function LogIn() {
             <p>Forgot password?</p>
             <button>Log in</button>
             <p id="separator"><span>OR</span></p>
-            <button>Log in</button>
-            <button>Log in</button>
-            <button>Log in</button>
+            <button id="gmail">Sign in with Google</button>
+            <button id="facebook">Sign in with Facebook</button>
+            <button id="apple">Sign in with Apple</button>
           </form>
         </div>
       </div>

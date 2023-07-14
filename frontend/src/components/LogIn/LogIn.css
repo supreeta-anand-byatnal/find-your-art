@@ -28,6 +28,11 @@
   width: 400px;
 }
 
+form > label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
 form > input {
   width: 100%;
   border: 1px solid;
@@ -60,7 +65,10 @@ button {
   text-align: center;
   border-bottom: 2px solid #e7e6e4;
   line-height: 0.1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+
 #separator > span {
   background: #ffffff;
   padding: 0 1rem;
@@ -76,4 +84,21 @@ button {
   background-image: url('../../assets/locksimple.svg');
   background-repeat: no-repeat;
   background-position: left 0.5rem center;
+}
+
+#gmail {
+  color: black;
+  background-color: #ffffff;
+  border: 2px solid #e7e6e4;
+  margin-bottom: 1rem;
+}
+
+#facebook {
+  background-color: #1877f2;
+  margin-bottom: 1rem;
+} 
+
+#apple {
+  background-color: #000000;
+  margin-bottom: 1rem;
 }
