@@ -1,0 +1,21 @@
+.create {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+}
+
+.create-side-image {
+  flex: 1;
+  height: 100vh;
+  background-image: url('../../assets/create-account.png');
+  background-size: cover;
+}
+
+.create-panel {
+  background-color: #ffffff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
