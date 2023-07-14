@@ -91,14 +91,27 @@ button {
   background-color: #ffffff;
   border: 2px solid #e7e6e4;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #facebook {
   background-color: #1877f2;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 } 
 
 #apple {
   background-color: #000000;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button > img {
+  padding-right: 0.5rem;
 }

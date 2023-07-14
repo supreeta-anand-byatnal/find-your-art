@@ -1,5 +1,7 @@
 import './LogIn.css';
-import sideImage from '../../assets/side-image.png'
+import google from '../../assets/google-icon.svg'
+import facebook from '../../assets/facebook-icon.svg'
+import apple from '../../assets/apple-icon.svg'
 
 export default function LogIn() {
   return (
@@ -16,9 +18,12 @@ export default function LogIn() {
             <p>Forgot password?</p>
             <button>Log in</button>
             <p id="separator"><span>OR</span></p>
-            <button id="gmail">Sign in with Google</button>
-            <button id="facebook">Sign in with Facebook</button>
-            <button id="apple">Sign in with Apple</button>
+            <button id="gmail">
+              <img src={google} alt="google icon"/>Sign in with Google</button>
+            <button id="facebook">
+            <img src={facebook} alt="facebook icon"/>Sign in with Facebook</button>
+            <button id="apple">
+            <img src={apple} alt="apple icon"/>Sign in with Apple</button>
           </form>
         </div>
       </div>
