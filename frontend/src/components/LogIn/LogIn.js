@@ -15,7 +15,7 @@ export default function LogIn() {
             <input id="email"></input>
             <label for="password">Password</label>
             <input id="password"></input>
-            <p>Forgot password?</p>
+            <p id="forgot-password">Forgot password?</p>
             <button>Log in</button>
             <p id="separator"><span>OR</span></p>
             <button id="gmail">

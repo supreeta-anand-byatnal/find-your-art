@@ -118,3 +118,7 @@ button {
 button > img {
   padding-right: 0.5rem;
 }
+
+#forgot-password {
+  text-decoration: underline;
+}
