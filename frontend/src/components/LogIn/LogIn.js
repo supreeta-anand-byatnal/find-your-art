@@ -24,6 +24,7 @@ export default function LogIn() {
             <img src={facebook} alt="facebook icon"/>Sign in with Facebook</button>
             <button id="apple">
             <img src={apple} alt="apple icon"/>Sign in with Apple</button>
+            <p id="signup">Don't have an account? <span>Sign up</span></p>
           </form>
         </div>
       </div>

@@ -122,3 +122,11 @@ button > img {
 #forgot-password {
   text-decoration: underline;
 }
+
+#signup {
+  text-align: center;
+}
+
+#signup > span {
+  font-weight: bold;
+}
