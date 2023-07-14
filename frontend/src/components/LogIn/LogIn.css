@@ -7,10 +7,10 @@
 }
 
 .login .side-image {
-  height: 1000px;
+  height: 100vh;
   left: 0;
   object-fit: cover;
   position: absolute;
   top: 0;
-  width: 600px;
+  width: 50%;
 }
