@@ -7,7 +7,7 @@
 .side-image {
   flex: 1;
   height: 100vh;
-  background-image: url('../../assets/side-image.png');
+  background-image: url('../../assets/login.png');
   background-size: cover;
 }
 
