@@ -1,0 +1,21 @@
+.login {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+}
+
+.side-image {
+  flex: 1;
+  height: 100vh;
+  background-image: url('../../assets/side-image.png');
+  background-size: cover;
+}
+
+.login-panel {
+  background-color: #ffffff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
