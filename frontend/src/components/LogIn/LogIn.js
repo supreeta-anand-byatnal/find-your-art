@@ -10,9 +10,9 @@ export default function LogIn() {
           <h1>Have an account? Log in.</h1>
           <form>
             <label for="email">Email</label>
-            <input></input>
+            <input id="email"></input>
             <label for="password">Password</label>
-            <input></input>
+            <input id="password"></input>
             <p>Forgot password?</p>
             <button>Log in</button>
             <p id="separator"><span>OR</span></p>

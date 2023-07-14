@@ -33,7 +33,7 @@ form > input {
   border: 1px solid;
   border-color: #e7e6e4;
   border-radius: 0.75rem;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 2.5rem;
 }
 
 form > p {
@@ -66,3 +66,14 @@ button {
   padding: 0 1rem;
 }
 
+#email {
+  background-image: url('../../assets/envelopesimple.svg');
+  background-repeat: no-repeat;
+  background-position: left 0.5rem center;
+}
+
+#password {
+  background-image: url('../../assets/locksimple.svg');
+  background-repeat: no-repeat;
+  background-position: left 0.5rem center;
+}
