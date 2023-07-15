@@ -15,7 +15,7 @@ h1 {
 
 form > label {
   display: block;
-  margin: 0.5rem 0;
+  margin: 1.5rem 0 0.5rem 0;
 }
 
 form > input {
@@ -102,5 +102,5 @@ button > img {
 }
 
 #signup-button {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
