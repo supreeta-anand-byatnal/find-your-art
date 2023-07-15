@@ -7,7 +7,7 @@ import apple from '../../assets/apple-icon.svg'
 export default function SignupForm() {
   return (
     <div className='signup-form'>                      
-      <h1>Create your account.</h1>
+      <h1 id="signup-title">Create your account.</h1>
       <form>
         <label for="signup-email">Email</label>
         <input id="signup-email"></input>

@@ -9,13 +9,14 @@
   width: 400px;
 }
 
-h1 {
+#signup-title {
   font-size: 1.6rem;
+  margin: 0;
 }
 
 form > label {
   display: block;
-  margin: 1.5rem 0 0.5rem 0;
+  margin: 2rem 0 0.5rem 0;
 }
 
 form > input {

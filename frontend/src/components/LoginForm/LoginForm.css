@@ -9,13 +9,14 @@
   width: 400px;
 }
 
-h1 {
+#login-title {
   font-size: 1.6rem;
+  margin: 0;
 }
 
 form > label {
   display: block;
-  margin: 0.5rem 0;
+  margin: 1.5rem 0 0.5rem 0;
 }
 
 form > input {
@@ -103,12 +104,18 @@ button > img {
 
 #login-forgot-password {
   text-decoration: underline;
+  margin: 2rem 0 0 0;
 }
 
 #login-signin {
+  margin: 2rem 0 0 0;
   text-align: center;
 }
 
 #login-signin > span {
   font-weight: bold;
+}
+
+#login-button {
+  margin-top: 2rem;
 }
