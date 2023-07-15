@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.signup-form {
+  width: 400px;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+form > label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+form > input {
+  width: 100%;
+  border: 1px solid;
+  border-color: #e7e6e4;
+  border-radius: 0.75rem;
+  padding: 0.75rem 2.5rem;
+}
+
+form > p {
+  width: 100%;
+  text-align: end;
+}
+
+button {
+  background-color: #494847;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  border-radius: 2rem;
+  border: none;
+}
+
+#signup-separator {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #e7e6e4;
+  line-height: 0.1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#signup-separator > span {
+  background: #ffffff;
+  padding: 0 1rem;
+}
+
+#signup-email {
+  background-image: url('../../assets/envelopesimple.svg');
+  background-repeat: no-repeat;
+  background-position: left 0.5rem center;
+}
+
+#signup-password, #signup-confirm-password {
+  background-image: url('../../assets/locksimple.svg');
+  background-repeat: no-repeat;
+  background-position: left 0.5rem center;
+}
+
+#signup-gmail {
+  color: black;
+  background-color: #ffffff;
+  border: 2px solid #e7e6e4;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signup-facebook {
+  background-color: #1877f2;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+#signup-apple {
+  background-color: #000000;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button > img {
+  padding-right: 0.5rem;
+}
+
+#signup-button {
+  margin-top: 1rem;
+}
