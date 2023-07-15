@@ -10,11 +10,17 @@ export default function SignupForm() {
       <h1 id="signup-title">Create your account.</h1>
       <form>
         <label for="signup-email">Email</label>
-        <input id="signup-email"></input>
+        <input id="signup-email" type="email" placeholder="hello@email.com" />
         <label for="signup-password">Password</label>
-        <input id="signup-password"></input>
+        <input 
+          id="signup-password" 
+          type="password" 
+          placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" />
         <label for="signup-confirm-password">Confirm Password</label>
-        <input id="signup-confirm-password"></input>
+        <input 
+          id="signup-confirm-password"
+          type="password" 
+          placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" />
         <button id="signup-button">Sign up</button>
         <p id="signup-separator"><span>OR</span></p>
         <button id="signup-gmail">

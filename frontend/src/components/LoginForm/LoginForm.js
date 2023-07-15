@@ -9,10 +9,19 @@ export default function LogIn() {
       <h1 id="login-title">Have an account? Log in.</h1>
       <form>
         <label for="login-email">Email</label>
-        <input id="login-email"></input>
+        <input 
+          id="login-email" 
+          type="email"
+          placeholder='hello@email.com' />
         <label for="login-password">Password</label>
-        <input id="login-password"></input>
-        <p id="login-forgot-password">Forgot password?</p>
+        <input 
+          id="login-password" 
+          type="password" 
+          placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" />
+        <p 
+          id="login-forgot-password">
+          Forgot password?
+        </p>
         <button id="login-button">Log in</button>
         <p id="login-separator"><span>OR</span></p>
         <button id="login-gmail">
