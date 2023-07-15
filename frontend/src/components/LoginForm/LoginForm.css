@@ -45,7 +45,7 @@ button {
   border: none;
 }
 
-#separator {
+#login-separator {
   width: 100%;
   text-align: center;
   border-bottom: 2px solid #e7e6e4;
@@ -54,24 +54,24 @@ button {
   margin-bottom: 2rem;
 }
 
-#separator > span {
+#login-separator > span {
   background: #ffffff;
   padding: 0 1rem;
 }
 
-#email {
+#login-email {
   background-image: url('../../assets/envelopesimple.svg');
   background-repeat: no-repeat;
   background-position: left 0.5rem center;
 }
 
-#password {
+#login-password {
   background-image: url('../../assets/locksimple.svg');
   background-repeat: no-repeat;
   background-position: left 0.5rem center;
 }
 
-#gmail {
+#login-gmail {
   color: black;
   background-color: #ffffff;
   border: 2px solid #e7e6e4;
@@ -81,7 +81,7 @@ button {
   justify-content: center;
 }
 
-#facebook {
+#login-facebook {
   background-color: #1877f2;
   margin-bottom: 1rem;
   display: flex;
@@ -89,7 +89,7 @@ button {
   justify-content: center;
 } 
 
-#apple {
+#login-apple {
   background-color: #000000;
   margin-bottom: 1rem;
   display: flex;
@@ -101,14 +101,14 @@ button > img {
   padding-right: 0.5rem;
 }
 
-#forgot-password {
+#login-forgot-password {
   text-decoration: underline;
 }
 
-#signup {
+#login-signin {
   text-align: center;
 }
 
-#signup > span {
+#login-signin > span {
   font-weight: bold;
 }

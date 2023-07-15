@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-.side-image {
+.login-side-image {
   flex: 1;
   height: 100vh;
   background-image: url('../../assets/login.png');
