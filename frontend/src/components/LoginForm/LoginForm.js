@@ -5,7 +5,7 @@ import apple from '../../assets/apple-icon.svg';
 
 export default function Login() {
   return (
-    <div className="login-form">
+    <div id="login-form">
       <h1 id="login-title">Have an account? Log in.</h1>
       <form>
         <label for="login-email">Email</label>
