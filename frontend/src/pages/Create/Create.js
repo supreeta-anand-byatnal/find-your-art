@@ -2,12 +2,13 @@ import React from "react";
 import "./Create.css";
 import SignupForm from "../../components/SignupForm/SignupForm";
 import RoleForm from '../../components/RoleForm/RoleForm'
+import ArtOrgForm from "../../components/ArtOrgForm/ArtOrgForm";
 
 export default function Create() {
   return (
     <div className="create">
       <div className="create-side-image" />
-      <div className="create-panel"></div>
+      <div className="create-panel"><ArtOrgForm></ArtOrgForm></div>
     </div>
   );
 }
