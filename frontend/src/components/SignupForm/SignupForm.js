@@ -3,6 +3,7 @@ import "./SignupForm.css";
 import google from "../../assets/google-icon.svg";
 import facebook from "../../assets/facebook-icon.svg";
 import apple from "../../assets/apple-icon.svg";
+import { Link } from "react-router-dom";
 
 export default function SignupForm() {
   return (
@@ -23,7 +24,9 @@ export default function SignupForm() {
           type="password"
           placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
         />
-        <button id="signup-button">Sign up</button>
+        <Link to="/signup/role">
+          <button id="signup-button">Sign up</button>
+        </Link>
         <p id="signup-separator">
           <span>OR</span>
         </p>

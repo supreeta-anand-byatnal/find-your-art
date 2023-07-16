@@ -1,7 +1,8 @@
-import './LoginForm.css';
-import google from '../../assets/google-icon.svg';
-import facebook from '../../assets/facebook-icon.svg';
-import apple from '../../assets/apple-icon.svg';
+import "./LoginForm.css";
+import google from "../../assets/google-icon.svg";
+import facebook from "../../assets/facebook-icon.svg";
+import apple from "../../assets/apple-icon.svg";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -35,7 +36,9 @@ export default function Login() {
         </button>
         <p id="login-signin">
           Don't have an account?
-          <span> Sign up</span>
+          <Link to="/signup">
+            <span> Sign up</span>
+          </Link>
         </p>
       </form>
     </div>
