@@ -4,7 +4,7 @@ import Login from "./pages/Login/Login";
 import Create from "./pages/Create/Create";
 import SignupForm from "./components/SignupForm";
 import RoleForm from "../src/components/RoleForm";
-import ArtOrgForm from "../src/components/ArtOrgForm";
+import OrgForm from "./components/OrgForm";
 import EducatorForm from "../src/components/EducatorForm/EducatorForm";
 import ArtistForm from "../src/components/ArtistForm/ArtistForm";
 
@@ -25,7 +25,7 @@ function App() {
           path="/signup/organization"
           element={
             <Create>
-              <ArtOrgForm />
+              <OrgForm />
             </Create>
           }
         ></Route>
