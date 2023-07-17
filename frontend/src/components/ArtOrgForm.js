@@ -1,10 +1,10 @@
 import React from "react";
-import "./ArtOrgForm.css";
+import "./Form.css";
 
 export default function ArtOrgForm() {
   return (
-    <div id="artorg-form">
-      <h1 id="artorg-title">Let's set up your Arts Organization profile!</h1>
+    <div className="form">
+      <h1>Let's set up your Arts Organization profile!</h1>
       <form>
         <label for="artorg-name">Organization name</label>
         <input id="artorg-name" type="text" placeholder="Organization name" />
@@ -22,8 +22,7 @@ export default function ArtOrgForm() {
         />
         <label for="artorg-city">City</label>
         <input id="artorg-city" type="text" placeholder="New York City" />
-        <button id="artorg-button">Next</button>
-        <p id="artorg-later">Set up profile details later &#8594;</p>
+        <button className="form-submit">Next</button>
       </form>
     </div>
   );

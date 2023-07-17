@@ -2,9 +2,9 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Create from "./pages/Create/Create";
-import SignupForm from "../src/components/SignupForm/SignupForm";
-import RoleForm from "../src/components/RoleForm/RoleForm";
-import ArtOrgForm from "../src/components/ArtOrgForm/ArtOrgForm";
+import SignupForm from "./components/SignupForm";
+import RoleForm from "../src/components/RoleForm";
+import ArtOrgForm from "../src/components/ArtOrgForm";
 import EducatorForm from "../src/components/EducatorForm/EducatorForm";
 import ArtistForm from "../src/components/ArtistForm/ArtistForm";
 
