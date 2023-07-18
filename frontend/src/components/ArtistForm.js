@@ -1,5 +1,5 @@
-import React from 'react'
-import './Form.css'
+import React from "react";
+import "./Form.css";
 
 export default function ArtistForm() {
   return (
@@ -9,7 +9,11 @@ export default function ArtistForm() {
         <div className="form-fullname">
           <div>
             <label for="artist-firstname">First name</label>
-            <input name="artist-firstname" type="text" placeholder="Jane"></input>
+            <input
+              name="artist-firstname"
+              type="text"
+              placeholder="Jane"
+            ></input>
           </div>
           <div>
             <label for="artist-lastname">Last name</label>
@@ -29,13 +33,9 @@ export default function ArtistForm() {
           placeholder="Cinema, painting, etc."
         />
         <label for="artist-city">City</label>
-        <input
-          id="artist-city"
-          type="text"
-          placeholder="New York City"
-        />
+        <input id="artist-city" type="text" placeholder="New York City" />
         <button className="form-submit">Next</button>
       </form>
     </div>
-  )
+  );
 }
