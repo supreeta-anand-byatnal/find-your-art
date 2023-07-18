@@ -1,17 +1,17 @@
-.create {
+.setup {
   background-color: #ffffff;
   display: flex;
   width: 100%;
 }
 
-.create-side-image {
+.setup-side-image {
   flex: 1;
   height: 100vh;
-  background-image: url('../../assets/create-account.png');
+  background-image: url('../../assets/setup-account.png');
   background-size: cover;
 }
 
-.create-panel {
+.setup-panel {
   background-color: #ffffff;
   flex: 1;
   display: flex;

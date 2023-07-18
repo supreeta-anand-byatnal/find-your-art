@@ -1,7 +1,7 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login/Login";
-import Create from "./pages/Create/Create";
+import Setup from "./pages/Setup/Setup";
 import SignupForm from "./components/SignupForm";
 import RoleForm from "../src/components/RoleForm";
 import OrgForm from "./components/OrgForm";
@@ -16,41 +16,41 @@ function App() {
         <Route
           path="/signup/artist"
           element={
-            <Create>
+            <Setup>
               <ArtistForm />
-            </Create>
+            </Setup>
           }
         ></Route>
         <Route
           path="/signup/organization"
           element={
-            <Create>
+            <Setup>
               <OrgForm />
-            </Create>
+            </Setup>
           }
         ></Route>
         <Route
           path="/signup/educator"
           element={
-            <Create>
+            <Setup>
               <EducatorForm />
-            </Create>
+            </Setup>
           }
         ></Route>
         <Route
           path="/signup/role"
           element={
-            <Create>
+            <Setup>
               <RoleForm />
-            </Create>
+            </Setup>
           }
         ></Route>
         <Route
           path="/signup"
           element={
-            <Create>
+            <Setup>
               <SignupForm />
-            </Create>
+            </Setup>
           }
         ></Route>
       </Routes>
