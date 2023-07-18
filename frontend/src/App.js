@@ -6,7 +6,7 @@ import SignupForm from "./components/SignupForm";
 import RoleForm from "../src/components/RoleForm";
 import OrgForm from "./components/OrgForm";
 import EducatorForm from "../src/components/EducatorForm/EducatorForm";
-import ArtistForm from "../src/components/ArtistForm/ArtistForm";
+import ArtistForm from "../src/components/ArtistForm";
 
 function App() {
   return (

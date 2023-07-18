@@ -90,3 +90,9 @@
 .form button img {
   padding-right: 0.5rem;
 }
+
+.form-fullname {
+  display: flex;
+  gap: 1.75rem;
+}
+
