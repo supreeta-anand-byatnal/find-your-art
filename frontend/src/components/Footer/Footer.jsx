@@ -1,7 +1,7 @@
 import React from "react";
 import "../Footer/footer.css";
 import image11 from '../../assets/image 11.png';
-import { BiSolidPhoneCall, BiLogoInstagramAlt} from 'react-icons/bi';
+import { BiSolidPhoneCall} from 'react-icons/bi';
 import {IoLocationSharp} from 'react-icons/io5';
 import {AiFillInstagram} from 'react-icons/ai';
 import {MdEmail} from 'react-icons/md';
