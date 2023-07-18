@@ -5,7 +5,7 @@ import Create from "./pages/Create/Create";
 import SignupForm from "./components/SignupForm";
 import RoleForm from "../src/components/RoleForm";
 import OrgForm from "./components/OrgForm";
-import EducatorForm from "../src/components/EducatorForm/EducatorForm";
+import EducatorForm from "./components/EducatorForm";
 import ArtistForm from "../src/components/ArtistForm";
 
 function App() {
