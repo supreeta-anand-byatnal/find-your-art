@@ -50,13 +50,13 @@
 }
 
 .form-email {
-  background-image: url('../assets/envelopesimple.svg');
+  background-image: url('../../assets/envelopesimple.svg');
   background-repeat: no-repeat;
   background-position: left 0.5rem center;
 }
 
 .form-password {
-  background-image: url('../assets/locksimple.svg');
+  background-image: url('../../assets/locksimple.svg');
   background-repeat: no-repeat;
   background-position: left 0.5rem center;
 }

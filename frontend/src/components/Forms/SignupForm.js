@@ -1,8 +1,8 @@
-import React from "react";
-import google from "../assets/google-icon.svg";
-import facebook from "../assets/facebook-icon.svg";
-import apple from "../assets/apple-icon.svg";
-import { Link } from "react-router-dom";
+import React from 'react';
+import google from '../../assets/google-icon.svg';
+import facebook from '../../assets/facebook-icon.svg';
+import apple from '../../assets/apple-icon.svg';
+import { Link } from 'react-router-dom';
 
 export default function SignupForm() {
   return (

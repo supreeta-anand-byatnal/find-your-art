@@ -1,5 +1,5 @@
-import React from "react";
-import "./Form.css";
+import React from 'react';
+import './Forms.css';
 
 export default function EducatorForm() {
   return (

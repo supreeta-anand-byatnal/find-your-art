@@ -1,5 +1,5 @@
-import React from "react";
-import "./Setup.css";
+import React from 'react';
+import './Setup.css';
 
 export default function Setup({ children }) {
   return (

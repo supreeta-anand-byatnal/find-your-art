@@ -1,9 +1,9 @@
-import "./LoginForm.css";
-import "../Form.css";
-import google from "../../assets/google-icon.svg";
-import facebook from "../../assets/facebook-icon.svg";
-import apple from "../../assets/apple-icon.svg";
-import { Link } from "react-router-dom";
+import './LoginForm.css';
+import '../Forms.css';
+import google from '../../../assets/google-icon.svg';
+import facebook from '../../../assets/facebook-icon.svg';
+import apple from '../../../assets/apple-icon.svg';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   return (

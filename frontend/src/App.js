@@ -1,12 +1,12 @@
-import "./App.css";
-import { Route, Routes } from "react-router-dom";
-import Login from "./pages/Login/Login";
-import Setup from "./pages/Setup/Setup";
-import SignupForm from "./components/SignupForm";
-import RoleForm from "../src/components/RoleForm";
-import OrgForm from "./components/OrgForm";
-import EducatorForm from "./components/EducatorForm";
-import ArtistForm from "../src/components/ArtistForm";
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Login from './pages/Login/Login';
+import Setup from './pages/Setup/Setup';
+import SignupForm from './components/Forms/SignupForm';
+import RoleForm from '../src/components/Forms/RoleForm';
+import OrgForm from './components/Forms/OrgForm';
+import EducatorForm from './components/Forms/EducatorForm';
+import ArtistForm from '../src/components/Forms/ArtistForm';
 
 function App() {
   return (
