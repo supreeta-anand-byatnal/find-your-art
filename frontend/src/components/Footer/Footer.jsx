@@ -58,8 +58,7 @@ const Footer = () => {
               </div>
               <div className="group-8">
                 <div className="text-wrapper font-semibold">Other</div>
-                <div className="text-wrapper-4">The Arts Challenge</div>
-                <div className="text-wrapper-5">
+                <div className="text-wrapper-4">
                   <a className='link' href = "https://donorbox.org/change-arts-donation">Donate</a></div>
               </div>
               <div className="group-9">
