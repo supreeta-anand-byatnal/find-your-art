@@ -13,21 +13,21 @@ export default function SignupForm() {
         <SingleField
           inputTitle="Email"
           inputID="signup-email"
-          inputClass="form-email"
+          inputClass="form-email icon-input"
           inputType="email"
           inputPH="hello@email.com"
         />
         <SingleField
           inputTitle="Password"
           inputID="signup-password"
-          inputClass="form-password"
+          inputClass="form-password icon-input"
           inputType="password"
           inputPH="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
         />
         <SingleField
           inputTitle="Confirm Password"
           inputID="signup-password"
-          inputClass="form-password"
+          inputClass="form-password icon-input"
           inputType="password"
           inputPH="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
         />

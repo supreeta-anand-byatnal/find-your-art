@@ -14,14 +14,14 @@ export default function Login() {
         <SingleField
           inputTitle="Email"
           inputID="login-email"
-          inputClass="form-email"
+          inputClass="form-email icon-input"
           inputType="email"
           inputPH="hello@email.com"
         />
         <SingleField
           inputTitle="Password"
           inputID="login-password"
-          inputClass="form-password"
+          inputClass="form-password icon-input"
           inputType="password"
           inputPH="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
         />
