@@ -1,5 +1,6 @@
 import React from 'react';
 import './Forms.css';
+import SingleField from './SingleField/SingleField';
 
 export default function ArtistForm() {
   return (
@@ -20,20 +21,24 @@ export default function ArtistForm() {
             <input name="artist-lastname" type="text" placeholder="Doe"></input>
           </div>
         </div>
-        <label for="artist-website">Website</label>
-        <input
-          id="artist-website"
-          type="text"
-          placeholder="www.organization.com"
+        <SingleField
+          inputTitle="Website"
+          inputID="artist-website"
+          inputType="text"
+          inputPH="www.organization.com"
         />
-        <label for="artist-disciplines">Art discipline(s)</label>
-        <input
-          id="artist-disciplines"
-          type="text"
-          placeholder="Cinema, painting, etc."
+        <SingleField
+          inputTitle="Art discipline(s)"
+          inputID="artist-disciplines"
+          inputType="text"
+          inputPH="Cinema, painting, etc."
         />
-        <label for="artist-city">City</label>
-        <input id="artist-city" type="text" placeholder="New York City" />
+        <SingleField
+          inputTitle="City"
+          inputID="artist-city"
+          inputType="text"
+          inputPH="New York City"
+        />
         <button className="form-submit">Next</button>
       </form>
     </div>

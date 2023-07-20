@@ -3,32 +3,33 @@ import google from '../../assets/google-icon.svg';
 import facebook from '../../assets/facebook-icon.svg';
 import apple from '../../assets/apple-icon.svg';
 import { Link } from 'react-router-dom';
+import SingleField from './SingleField/SingleField';
 
 export default function SignupForm() {
   return (
     <div className="form">
       <h1>Create your account.</h1>
       <form>
-        <label for="signup-email">Email</label>
-        <input
-          id="signup-email"
-          className="form-email"
-          type="email"
-          placeholder="hello@email.com"
+        <SingleField
+          inputTitle="Email"
+          inputID="signup-email"
+          inputClass="form-email"
+          inputType="email"
+          inputPH="hello@email.com"
         />
-        <label for="signup-password">Password</label>
-        <input
-          id="signup-password"
-          className="form-password"
-          type="password"
-          placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+        <SingleField
+          inputTitle="Password"
+          inputID="signup-password"
+          inputClass="form-password"
+          inputType="password"
+          inputPH="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
         />
-        <label for="signup-confirm-password">Confirm Password</label>
-        <input
-          id="signup-confirm-password"
-          type="password"
-          className="form-password"
-          placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+        <SingleField
+          inputTitle="Confirm Password"
+          inputID="signup-password"
+          inputClass="form-password"
+          inputType="password"
+          inputPH="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
         />
         <Link to="/signup/role">
           <button className="form-submit">Sign up</button>

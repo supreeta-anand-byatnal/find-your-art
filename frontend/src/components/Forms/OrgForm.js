@@ -1,27 +1,36 @@
 import React from 'react';
 import './Forms.css';
+import SingleField from './SingleField/SingleField';
 
 export default function OrgForm() {
   return (
     <div className="form">
       <h1>Let's set up your Arts Organization profile!</h1>
       <form>
-        <label for="org-name">Organization name</label>
-        <input id="org-name" type="text" placeholder="Organization name" />
-        <label for="org-website">Website</label>
-        <input
-          id="org-website"
-          type="text"
-          placeholder="www.organization.com"
+        <SingleField
+          inputTitle="Organization name"
+          inputID="org-name"
+          inputType="text"
+          inputPH="Organization name"
         />
-        <label for="org-disciplines">Arts discipline(s)</label>
-        <input
-          id="org-disciplines"
-          type="text"
-          placeholder="Cinema, painting, etc."
+        <SingleField
+          inputTitle="Website"
+          inputID="org-website"
+          inputType="text"
+          inputPH="www.organization.com"
         />
-        <label for="org-city">City</label>
-        <input id="org-city" type="text" placeholder="New York City" />
+        <SingleField
+          inputTitle="Arts discipline(s)"
+          inputID="org-disciplines"
+          inputType="text"
+          inputPH="Cinema, painting, etc."
+        />
+        <SingleField
+          inputTitle="City"
+          inputID="org-city"
+          inputType="text"
+          inputPH="New York City"
+        />
         <button className="form-submit">Next</button>
       </form>
     </div>

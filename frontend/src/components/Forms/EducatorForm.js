@@ -1,5 +1,6 @@
 import React from 'react';
 import './Forms.css';
+import SingleField from './SingleField/SingleField';
 
 export default function EducatorForm() {
   return (
@@ -15,25 +16,29 @@ export default function EducatorForm() {
           <input name="artist-lastname" type="text" placeholder="Doe"></input>
         </div>
       </div>
-      <label for="educator-employer">Website</label>
-      <input
-        name="educator-employer"
-        type="text"
-        placeholder="Elementary School of Arts, Educator Company, etc."
+      <SingleField
+        inputTitle="Website"
+        inputID="educator-employer"
+        inputType="text"
+        inputPH="Elementary School of Arts, Educator Company, etc."
       />
-      <label for="educator-subjects">Subject(s)</label>
-      <input
-        name="educator-subjects"
-        type="text"
-        placeholder="History, math, etc."
+      <SingleField
+        inputTitle="Subject(s)"
+        inputID="educator-subjects"
+        inputType="text"
+        inputPH="History, math, etc."
       />
-      <label for="educator-city">City</label>
-      <input name="educator-city" type="text" placeholder="New York City" />
-      <label for="educator-grade">Website</label>
-      <input
-        name="educator-grade"
-        type="text"
-        placeholder="Elementary, Middle, High school, etc."
+      <SingleField
+        inputTitle="City"
+        inputID="educator-city"
+        inputType="text"
+        inputPH="New York City"
+      />
+      <SingleField
+        inputTitle="Teaching level(s)"
+        inputID="educator-grade"
+        inputType="text"
+        inputPH="Elementary, Middle, High school, etc."
       />
       <button className="form-submit">Next</button>
     </div>
