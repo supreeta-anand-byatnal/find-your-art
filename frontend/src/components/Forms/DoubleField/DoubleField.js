@@ -12,7 +12,7 @@ export default function DoubleField({
   rightInputPH,
 }) {
   return (
-    <div className="double-field">
+    <div id="double-field">
       <SingleField
         inputTitle={leftInputTitle}
         inputID={leftInputID}
