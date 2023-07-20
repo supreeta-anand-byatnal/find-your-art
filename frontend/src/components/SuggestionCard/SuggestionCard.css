@@ -1,0 +1,31 @@
+.suggestion-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.suggestion-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    margin: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.suggestion-card__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.suggestion-card__description {
+    font-size: 14px;
+}
+  
