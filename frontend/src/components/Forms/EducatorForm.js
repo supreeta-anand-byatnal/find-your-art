@@ -1,21 +1,21 @@
 import React from 'react';
 import './Forms.css';
 import SingleField from './SingleField/SingleField';
+import DoubleField from './DoubleField/DoubleField';
 
 export default function EducatorForm() {
   return (
     <div className="form">
       <h1>Let's set up your Teacher/Educator profile!</h1>
-      <div className="form-fullname">
-        <div>
-          <label for="artist-firstname">First name</label>
-          <input name="artist-firstname" type="text" placeholder="Jane"></input>
-        </div>
-        <div>
-          <label for="artist-lastname">Last name</label>
-          <input name="artist-lastname" type="text" placeholder="Doe"></input>
-        </div>
-      </div>
+      <DoubleField
+        leftInputID="educator-firstname"
+        rightInputI="educator-lastname"
+        leftInputTitle="First name"
+        rightInputTitle="Last name"
+        inputType="text"
+        leftInputPH="Jane"
+        rightInputPH="Doe"
+      />
       <SingleField
         inputTitle="Website"
         inputID="educator-employer"
