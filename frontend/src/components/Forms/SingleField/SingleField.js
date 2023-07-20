@@ -1,4 +1,5 @@
 import React from 'react'
+import './SingleField.css'
 
 export default function SingleField({
   inputTitle,
@@ -8,7 +9,7 @@ export default function SingleField({
   inputPH,
 }) {
   return (
-    <>
+    <div id="single-field">
       <label for={inputID}>{inputTitle}</label>
       <input
         id={inputID}
@@ -16,6 +17,6 @@ export default function SingleField({
         type={inputType}
         placeholder={inputPH}
       ></input>
-    </>
+    </div>
   );
 }

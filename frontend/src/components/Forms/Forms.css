@@ -8,19 +8,6 @@
   margin: 0;
 }
 
-.form label {
-  display: block;
-  margin: 1.75rem 0 0.5rem 0;
-}
-
-.form input {
-  width: 100%;
-  border: 1px solid;
-  border-color: #e7e6e4;
-  border-radius: 0.75rem;
-  padding: 0.75rem 2.5rem;
-}
-
 .form-submit {
   margin-top: 2rem;
 }
