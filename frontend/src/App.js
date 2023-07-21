@@ -6,17 +6,17 @@ function App() {
   // Sample data for suggestion cards
   const suggestionData = [
     {
-      imageUrl: 'assets/sample_event_card1.jpeg',
+      imageUrl: 'src/assets/sample_event_card1.jpeg',
       title: 'Event Title 1',
       description: 'Lorem ipsum dolor sit amet consectetur. Sed tincidunt...',
     },
     {
-      imageUrl: 'assets/sample_event_card2.jpeg',
+      imageUrl: 'src/assets/sample_event_card2.jpeg',
       title: 'Event Title 2',
       description: 'Lorem ipsum dolor sit amet consectetur. Sed tincidunt...',
     },
     {
-      imageUrl: 'assets/sample_event_card3.jpeg',
+      imageUrl: 'src/assets/sample_event_card3.jpeg',
       title: 'Event Title 3',
       description: 'Lorem ipsum dolor sit amet consectetur. Sed tincidunt...',
     },
@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <div className="suggestion-section">
-        <h1>Suggestions</h1>
+        <h2>Suggestions</h2>
         <div className="suggestion-list">
           {/* Map through the suggestionData and render SuggestionCard components */}
           {suggestionData.map((data, index) => (
