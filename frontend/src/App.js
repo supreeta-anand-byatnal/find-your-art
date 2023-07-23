@@ -1,22 +1,25 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
 import SuggestionCard from './components/SuggestionCard/SuggestionCard';
+import imgsrc1 from './assets/sample_event_card1.jpeg'
+import imgsrc2 from './assets/sample_event_card2.jpeg'
+import imgsrc3 from './assets/sample_event_card3.jpeg'
 
 function App() {
   // Sample data for suggestion cards
   const suggestionData = [
     {
-      imageUrl: 'src/assets/sample_event_card1.jpeg',
+      imageUrl: imgsrc1,
       title: 'Event Title 1',
       description: 'Lorem ipsum dolor sit amet consectetur. Sed tincidunt...',
     },
     {
-      imageUrl: 'src/assets/sample_event_card2.jpeg',
+      imageUrl: imgsrc2,
       title: 'Event Title 2',
       description: 'Lorem ipsum dolor sit amet consectetur. Sed tincidunt...',
     },
     {
-      imageUrl: 'src/assets/sample_event_card3.jpeg',
+      imageUrl: imgsrc3,
       title: 'Event Title 3',
       description: 'Lorem ipsum dolor sit amet consectetur. Sed tincidunt...',
     },
