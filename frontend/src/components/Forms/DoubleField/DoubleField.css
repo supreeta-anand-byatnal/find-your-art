@@ -1,4 +1,8 @@
 #double-field {
   display: flex;
-  justify-content: space-between;
+  gap: 1.75rem; 
+}
+
+#double-field > * {
+  flex: 1;
 }
