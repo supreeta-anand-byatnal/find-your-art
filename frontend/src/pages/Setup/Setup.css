@@ -6,7 +6,8 @@
 
 .setup-side-image {
   flex: 1;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
   background-image: url('../../assets/setup-account.png');
   background-size: cover;
 }
