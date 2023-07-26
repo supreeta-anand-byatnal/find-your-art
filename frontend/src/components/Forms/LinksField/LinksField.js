@@ -25,7 +25,7 @@ export default function LinksField() {
       <label>Social Media Links</label>
       {links.map((link, index) => (
         <div>
-          <input type="text" onChange={(e) => updateLink(e, index)}></input>
+          <input type="text" placeholder="www.yoursocialmedia.com" onChange={(e) => updateLink(e, index)}></input>
           <button id="links-delete" onClick={(e) => deleteLink(e, index)}>
             Remove
           </button>
