@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './LinksField.css'
 
-export default function LinksField() {
+export default function LinksField({inputTitle, inputPH}) {
   const [links, setLinks] = useState([]);
 
   function handleClick(e) {
@@ -22,10 +22,10 @@ export default function LinksField() {
 
   return (
     <div id="links-field">
-      <label>Social Media Links</label>
+      <label>{inputTitle}</label>
       {links.map((link, index) => (
         <div>
-          <input type="text" placeholder="www.yoursocialmedia.com" onChange={(e) => updateLink(e, index)}></input>
+          <input type="text" placeholder={inputPH} value={links[index]}onChange={(e) => updateLink(e, index)}></input>
           <button id="links-delete" onClick={(e) => deleteLink(e, index)}>
             Remove
           </button>
