@@ -2,6 +2,7 @@ import React from 'react';
 import './Forms.css';
 import SingleField from './SingleField/SingleField';
 import DoubleField from './DoubleField/DoubleField';
+import TagField from './TagField/TagField';
 
 export default function EducatorForm() {
   return (
@@ -9,7 +10,7 @@ export default function EducatorForm() {
       <h1>Let's set up your Teacher/Educator profile!</h1>
       <DoubleField
         leftInputID="educator-firstname"
-        rightInputI="educator-lastname"
+        rightInputID="educator-lastname"
         leftInputTitle="First name"
         rightInputTitle="Last name"
         inputType="text"
@@ -17,28 +18,35 @@ export default function EducatorForm() {
         rightInputPH="Doe"
       />
       <SingleField
-        inputTitle="Website"
+        inputTitle="Pronouns"
+        inputID="educator-pronouns"
+        inputType="text"
+        inputPH="she/him/they"
+      />
+      <SingleField
+        inputTitle="School name or organization name"
         inputID="educator-employer"
         inputType="text"
         inputPH="Elementary School of Arts, Educator Company, etc."
       />
-      <SingleField
-        inputTitle="Subject(s)"
+      <TagField
         inputID="educator-subjects"
-        inputType="text"
+        inputTitle="Subject(s)"
         inputPH="History, math, etc."
       />
-      <SingleField
-        inputTitle="City"
-        inputID="educator-city"
-        inputType="text"
-        inputPH="New York City"
+      <TagField
+        inputID="educator-association"
+        inputTitle="Grade Level(s) or Group Association"
+        inputPH="4th Grade, family, etc."
       />
-      <SingleField
-        inputTitle="Teaching level(s)"
-        inputID="educator-grade"
+      <DoubleField 
+        leftInputID="educator-city"
+        rightInputID="educator-zip"
+        leftInputTitle="City"
+        rightInputTitle="Zip Code"
         inputType="text"
-        inputPH="Elementary, Middle, High school, etc."
+        leftInputPH="Atlanta, Seattle, etc."
+        rightInputPH="000000"
       />
       <button className="form-submit">Next</button>
     </div>

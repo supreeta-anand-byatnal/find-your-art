@@ -2,6 +2,8 @@ import React from 'react';
 import './Forms.css';
 import SingleField from './SingleField/SingleField';
 import DoubleField from './DoubleField/DoubleField';
+import TagField from '../Forms/TagField/TagField';
+import LinksField from './LinksField/LinksField';
 
 export default function ArtistForm() {
   return (
@@ -10,7 +12,7 @@ export default function ArtistForm() {
       <form>
         <DoubleField
           leftInputID="artist-firstname"
-          rightInputI="artist-lastname"
+          rightInputID="artist-lastname"
           leftInputTitle="First name"
           rightInputTitle="Last name"
           inputType="text"
@@ -18,24 +20,39 @@ export default function ArtistForm() {
           rightInputPH="Doe"
         />
         <SingleField
+          inputTitle="Pronouns"
+          inputID="artist-pronouns"
+          inputType="text"
+          inputPH="she/him/they"
+        />
+        <SingleField
           inputTitle="Website"
           inputID="artist-website"
           inputType="text"
           inputPH="www.organization.com"
         />
-        <SingleField
-          inputTitle="Art discipline(s)"
-          inputID="artist-disciplines"
-          inputType="text"
+        <LinksField inputTitle="Social Media Link(s)" inputPH="www.yoursocialmedia.com"/>
+        <TagField
+          inputID="artist-discipline"
+          inputTitle="Art Disciplines(s)"
           inputPH="Cinema, painting, etc."
         />
-        <SingleField
-          inputTitle="City"
-          inputID="artist-city"
+        <DoubleField
+          leftInputID="artist-city"
+          rightInputID="artist-zip"
+          leftInputTitle="City"
+          rightInputTitle="Zip Code"
           inputType="text"
-          inputPH="New York City"
+          leftInputPH="Atlanta, Seattle, etc."
+          rightInputPH="000000"
         />
-        <button className="form-submit">Next</button>
+        <button
+          className="form-submit"
+          type="submit"
+          onSubmit={(e) => console.log("hi")}
+        >
+          Next
+        </button>
       </form>
     </div>
   );

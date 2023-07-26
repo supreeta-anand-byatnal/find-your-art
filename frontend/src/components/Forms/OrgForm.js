@@ -1,6 +1,9 @@
 import React from 'react';
 import './Forms.css';
 import SingleField from './SingleField/SingleField';
+import LinksField from './LinksField/LinksField';
+import TagField from './TagField/TagField';
+import DoubleField from './DoubleField/DoubleField';
 
 export default function OrgForm() {
   return (
@@ -19,17 +22,20 @@ export default function OrgForm() {
           inputType="text"
           inputPH="www.organization.com"
         />
-        <SingleField
-          inputTitle="Arts discipline(s)"
-          inputID="org-disciplines"
-          inputType="text"
+        <LinksField inputTitle="Social Media Link(s)" inputPH="www.yoursocialmedia.com"/>
+        <TagField
+          inputID="org-discipline"
+          inputTitle="Art Disciplines(s)"
           inputPH="Cinema, painting, etc."
         />
-        <SingleField
-          inputTitle="City"
-          inputID="org-city"
+        <DoubleField
+          leftInputID="org-city"
+          rightInputID="org-zip"
+          leftInputTitle="City"
+          rightInputTitle="Zip Code"
           inputType="text"
-          inputPH="New York City"
+          leftInputPH="Atlanta, Seattle, etc."
+          rightInputPH="000000"
         />
         <button className="form-submit">Next</button>
       </form>
