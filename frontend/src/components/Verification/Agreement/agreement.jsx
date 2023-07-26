@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import Button from "./Button";
 
 import "./agreement.css";
-import logo from "../../assets/FYA logo.png";
-import img from "../../assets/Vector.png";
+import logo from "../../../assets/FYA logo.png";
+import img from "../../../assets/Vector.png";
 
 const Verification = () => {
     const [isChecked, setIsChecked] = useState(false);

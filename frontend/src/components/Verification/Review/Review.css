@@ -1,0 +1,123 @@
+.verification-under {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .verification-under .div {
+    background-color: #ffffff;
+    border: 2px none;
+    height: 1000px;
+    position: relative;
+    width: 1200px;
+  }
+  
+  .verification-under .frame {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 92px;
+    height: 298px;
+    justify-content: center;
+    left: 600px;
+    padding: 0px 60px;
+    position: absolute;
+    top: 160px;
+    width: 600px;
+  }
+  
+  .verification-under .frame-2 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: -8.5px;
+    margin-top: -8.5px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .verification-under .text-wrapper {
+    color: #000000;
+    font-family: "DM Sans-Medium", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+   
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .verification-under .our-admin-team-will {
+    color: #000000;
+    font-family: "DM Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: left;
+    position: relative;
+    width: 480px;
+  }
+  
+  .verification-under .frame-wrapper {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 370px;
+  }
+  
+  .verification-under .frame-3 {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    position: relative;
+    width: 600px;
+  }
+  
+  .verification-under .button-instance {
+    display: flex !important;
+    width: 480px !important;
+  }
+  
+  .verification-under .text-wrapper-2 {
+    color: #8d8d8d;
+    font-family: "DM Sans-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .verification-under .vector {
+    height: 1000px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 581px;
+  }
+  
+  .verification-under .FYA-logo {
+    height: 35px;
+    left: 649px;
+    position: absolute;
+    top: 32px;
+    width: 174px;
+  }
+  
