@@ -1,0 +1,33 @@
+/* Button.css */
+.button {
+  align-items: center;
+  border-radius: 32px;
+  display: inline-flex;
+  gap: 8px;
+  height: 48px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.button .div {
+  font-family: "DM Sans-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+/* Button style when the checkbox is unchecked */
+.button-instance.button-unchecked {
+  background-color: #494843;
+  color: #ffffff; 
+}
+
+/* Button style when the checkbox is checked */
+.button-instance.button-checked {
+  background-color: black;
+  color: white;
+}
