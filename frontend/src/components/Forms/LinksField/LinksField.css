@@ -1,23 +1,28 @@
+#links-field {
+  margin-top: 1.75rem;
+}
+
 #links-field input {
   width: 100%;
   border: 1px solid;
   border-color: #e7e6e4;
   border-radius: 0.75rem;
   padding: 0.75rem;
+  margin-top: 1.75rem;
 }
 
 #links-field button {
   padding: 0;
   width: 100%;
-  text-align: left;
   background-color: transparent;
-  text-decoration: underline;
 }
 
 #links-add {
-  color: blue;
+  color: #2F6FED;
+  text-align: left;
 }
 
 #links-delete {
-  color: rgb(255, 26, 26);
+  color: #E02D3C;
+  text-align: right;
 }
