@@ -1,52 +1,59 @@
 import { Route } from 'react-router-dom';
-import Login from '../pages/Login/Login';
-import Setup from '../pages/Setup/Setup';
+import Account from '../pages/Account/Account';
 import ArtistForm from '../components/Forms/ArtistForm';
 import OrgForm from '../components/Forms/OrgForm';
 import RoleForm from '../components/Forms/RoleForm';
 import EducatorForm from '../components/Forms/EducatorForm';
 import SignupForm from '../components/Forms/SignupForm';
+import LoginForm from '../components/Forms/LoginForm/LoginForm'
 
 const accountRoutes = [
-  <Route path="/login" element={<Login />}></Route>,
+  <Route
+    path="/login"
+    element={
+      <Account>
+        <LoginForm />
+      </Account>
+    }
+  ></Route>,
   <Route
     path="/signup/artist"
     element={
-      <Setup>
+      <Account>
         <ArtistForm />
-      </Setup>
+      </Account>
     }
   ></Route>,
   <Route
     path="/signup/organization"
     element={
-      <Setup>
+      <Account>
         <OrgForm />
-      </Setup>
+      </Account>
     }
   ></Route>,
   <Route
     path="/signup/educator"
     element={
-      <Setup>
+      <Account>
         <EducatorForm />
-      </Setup>
+      </Account>
     }
   ></Route>,
   <Route
     path="/signup/role"
     element={
-      <Setup>
+      <Account>
         <RoleForm />
-      </Setup>
+      </Account>
     }
   ></Route>,
   <Route
     path="/signup"
     element={
-      <Setup>
+      <Account>
         <SignupForm />
-      </Setup>
+      </Account>
     }
   ></Route>,
 ];
