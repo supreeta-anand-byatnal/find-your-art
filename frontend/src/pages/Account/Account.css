@@ -8,7 +8,7 @@
   flex: 1;
   min-height: 100vh;
   max-height: 100%;
-  background-image: url('../../assets/setup-account.png');
+  background-image: url('../../assets/side-image.svg');
   background-size: cover;
 }
 

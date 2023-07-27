@@ -1,5 +1,5 @@
 import React from 'react';
-import './Setup.css';
+import './Account.css';
 
 export default function Setup({ children }) {
   return (
