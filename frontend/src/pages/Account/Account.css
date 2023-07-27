@@ -22,6 +22,6 @@
   margin-bottom: 4rem;
 }
 
-#account-form-container img {
+#account-form-container > img {
   margin: 2rem 0 5rem 0;
 }
