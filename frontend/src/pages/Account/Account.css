@@ -1,10 +1,10 @@
-.setup {
+.account {
   background-color: #ffffff;
   display: flex;
   width: 100%;
 }
 
-.setup-side-image {
+.account-side-image {
   flex: 1;
   min-height: 100vh;
   max-height: 100%;
@@ -12,7 +12,7 @@
   background-size: cover;
 }
 
-.setup-panel {
+.account-form {
   background-color: #ffffff;
   flex: 1;
   display: flex;
