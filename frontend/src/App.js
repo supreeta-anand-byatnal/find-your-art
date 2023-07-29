@@ -29,7 +29,6 @@ function App() {
       <div className="suggestion-section">
         <h2>Suggestions</h2>
         <div className="suggestion-list">
-          {/* Map through the suggestionData and render SuggestionCard components */}
           {suggestionData.map((data, index) => (
             <SuggestionCard
               key={index}
