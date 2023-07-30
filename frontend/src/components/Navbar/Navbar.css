@@ -1,0 +1,55 @@
+#navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem 0 1rem;
+  height: 5rem;
+}
+
+#navbar-container > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-self: center;
+  color: #494847;
+}
+
+#navbar-button-container {
+  align-self: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+#navbar-container > img {
+  height: 3rem;
+  align-self: center;
+}
+
+#navbar-button-container #navbar-login-button {
+  border: 2px solid #494847; 
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  width: fit-content;
+  border-radius: 2rem;
+}
+
+#navbar-button-container #navbar-signup-button {
+  background-color: #494847;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  width: fit-content;
+  border-radius: 2rem;
+  border: 2px solid #494847; 
+}
+
+#navbar-donate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d33d6c;
+  gap: 0.5rem;
+}

@@ -1,0 +1,15 @@
+#login-forgot-password {
+  text-decoration: underline;
+  margin: 2rem 0 0 0;
+  width: 100%;
+  text-align: end;
+}
+
+#login-signin {
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+
+#login-signin > span {
+  font-weight: bold;
+}
