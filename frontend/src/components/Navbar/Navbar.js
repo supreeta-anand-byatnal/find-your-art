@@ -12,7 +12,9 @@ export default function Navbar() {
         <li>Explore</li>
         <li>Partners</li>
         <li>FAQs</li>
-        <li id="navbar-donate"><img src={donate} alt="donate icon"/> Donate</li>
+        <li id="navbar-donate">
+          <img src={donate} alt="donate icon" /> Donate
+        </li>
       </ul>
       <div id="navbar-button-container">
         <Link to="/login">
@@ -23,5 +25,5 @@ export default function Navbar() {
         </Link>
       </div>
     </nav>
-  )
+  );
 }
