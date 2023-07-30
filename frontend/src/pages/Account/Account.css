@@ -20,8 +20,15 @@
 
 #account-form-container {
   margin-bottom: 4rem;
+  width: 80%;
 }
 
 #account-form-container > img {
   margin: 2rem 0 5rem 0;
+}
+
+@media only screen and (min-width: 1280px) {
+  #account-form-container {
+    width: 500px;
+  }
 }
