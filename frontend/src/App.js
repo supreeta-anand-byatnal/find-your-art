@@ -45,7 +45,8 @@ function App() {
       <Routes>
         {accountRoutes}
       </Routes>
-    <div>
+    </div>
   );
+}
 
 export default App;
