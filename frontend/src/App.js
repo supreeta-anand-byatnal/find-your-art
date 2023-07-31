@@ -1,4 +1,6 @@
 import './App.css';
+import { Routes } from 'react-router-dom';
+import accountRoutes from './routes/accountRoutes';
 import Footer from './components/Footer/Footer';
 import SuggestionCard from './components/SuggestionCard/SuggestionCard';
 import imgsrc1 from './assets/sample_event_card1.jpeg'
@@ -24,6 +26,7 @@ function App() {
       description: 'Lorem ipsum dolor sit amet consectetur. Sed tincidunt...',
     },
   ];
+  
   return (
     <div className="App">
       <div className="suggestion-section">
@@ -39,9 +42,10 @@ function App() {
           ))}
         </div>
       </div>
-      {/* <Footer /> */}
-    </div>
+      <Routes>
+        {accountRoutes}
+      </Routes>
+    <div>
   );
-}
 
 export default App;

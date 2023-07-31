@@ -1,0 +1,8 @@
+#double-field {
+  display: flex;
+  gap: 1.75rem; 
+}
+
+#double-field > * {
+  flex: 1;
+}
