@@ -1,0 +1,68 @@
+.filters-container {
+    width: 225px;
+    flex-basis: fit-content;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 50px;
+}
+
+.filters-header {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.toggleswitch-container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.toggleswitch-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-container {
+    margin-left: -35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.location-container {
+    margin-left: -35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-buttons {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.apply-button {
+    height: 53px;
+    width: 126px;
+    border-radius: 32px;
+    border-width: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #5B5A61;
+}
+
+.reset-filters-button {
+    font-weight: 400;
+    font-weight: 16px;
+    border: none;
+    background: none;
+}
