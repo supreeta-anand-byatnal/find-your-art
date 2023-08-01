@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "username": "user1",
+    "password": "password1"
+  },
+  {
+    "id": 2,
+    "username": "user2",
+    "password": "password2"
+  },
+  {
+    "id": 3,
+    "password": "$2b$10$TyZIzhn09LgrVkYG/LaReejo7sQOAht6rMBjAf400wbq98DW1OBxK"
+  },
+  {
+    "id": 4,
+    "username": "alien",
+    "password": "$2b$10$ju4PrdeMyhXQUCaVEw5rJOuY0Hm4GBAx04acfeVqatEF0wud8ud8S"
+  }
+]
