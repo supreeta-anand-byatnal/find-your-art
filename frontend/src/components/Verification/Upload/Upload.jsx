@@ -1,11 +1,30 @@
-import React from "react";
-import Button from "./Button/Button";
+import React, { useState, useRef } from "react";
 import logo from "../../../assets/FYA logo.png";
 import image from "../../../assets/Vector.png";
+import Button from "./Button/ButtonUpload";
 import filearrow from "../../../assets/file-arrow.png";
 import "./Upload.css";
 
 const VerificationInfo = () => {
+  const [selectedFile, setSelectedFile] = useState(null);
+  const fileInputRef = useRef(null);
+
+  const handleOnClick = () => {
+    window.location.href = "/upload";
+  };
+
+  const handleFileChange = (event) => {
+    setSelectedFile(event.target.files[0]);
+  };
+
+  const handleFileUpload = () => {
+    console.log("Selected File:", selectedFile);
+    setSelectedFile(null);
+    // Perform the file upload logic here
+    // For example, you can use 'selectedFile' to upload the file to your server or perform other actions.
+    // You may need to make an API call to send the file to the server, etc.
+  };
+
   return (
     <div className="verification-info">
       <div className="div">
@@ -19,7 +38,9 @@ const VerificationInfo = () => {
             </p>
           </div>
           <div className="frame-3">
-            <Button className="button-instance" hierarchy="primary" state="default" text="Verify" />
+            <button className={`button button-instance`} onClick={handleOnClick}>
+              Verify
+            </button>
             <div className="text-wrapper-2">Back</div>
           </div>
         </div>
@@ -38,7 +59,20 @@ const VerificationInfo = () => {
             <div className="frame-4">
               <img className="file-arrow-up" alt="File arrow up" src={filearrow} />
               <p className="p">Drag a file here or browse to upload</p>
-              <Button className="design-component-instance-node" hierarchy="primary" state="default" text="Browse" />
+              <input
+                type="file"
+                onChange={handleFileChange}
+                style={{ display: "none" }}
+                ref={fileInputRef}
+              />
+              <button
+                className="button design-component-instance-node"
+                hierarchy="primary"
+                onClick={() => fileInputRef.current.click()}
+              >
+                Browse
+              </button>
+              {selectedFile && <p>Selected File: {selectedFile.name}</p>}
             </div>
           </div>
         </div>

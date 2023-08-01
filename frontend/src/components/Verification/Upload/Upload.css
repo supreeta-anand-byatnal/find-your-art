@@ -20,9 +20,9 @@
   flex-direction: column;
   gap: 12px;
   justify-content: center;
-  left: 600px;
   padding: 0px 60px;
   position: absolute;
+  left: 200px; /* Adjust the left position to move the frame to the right */
   top: 160px;
   width: 600px;
 }
@@ -33,7 +33,8 @@
   flex: 0 0 auto;
   flex-direction: column;
   gap: 24px;
-  margin-right: -28px;
+  margin-right: 0; /* Remove negative margin-right to prevent overlap */
+  left: 500px; /* Reset the left position to the default value */
   position: relative;
 }
 
@@ -67,7 +68,7 @@
   flex-direction: column;
   gap: 24px;
   justify-content: center;
-  left: 0;
+  left: 500px;
   position: absolute;
   top: 500px;
   width: 600px;
@@ -76,8 +77,10 @@
 .verification-info .button-instance {
   display: flex !important;
   opacity: 0.6 !important;
-
+  color: white !important;
   width: 480px !important;
+  background-color :#1c1b1a;;
+  border: #000000;
 }
 
 .verification-info .text-wrapper-2 {
@@ -97,7 +100,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  left: 660px;
+  left: 760px;
   position: absolute;
   top: 315px;
   width: 480px;
@@ -199,6 +202,9 @@
   height: 39px !important;
   top: 30px;
   width: 112px !important;
+  background-color: #1c1b1a;
+  border: #000000;
+  color: white;
 }
 
 .verification-info .if-you-are {
@@ -206,7 +212,7 @@
   font-family: "DM Sans-Regular", Helvetica;
   font-size: 16px;
   font-weight: 400;
-  left: 646px;
+  left: 763px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -231,12 +237,12 @@
     left: -120px; 
     position: absolute;
     top: 0;
-    width: 700px;
+    width: 818px;
 }
 
 .verification-info .FYA-logo {
   height: 35px;
-  left: 649px;
+  left: 760px;
   position: absolute;
   top: 32px;
   width: 174px;

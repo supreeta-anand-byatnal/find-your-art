@@ -1,4 +1,4 @@
-/* Button.css */
+
 .button {
   align-items: center;
   border-radius: 32px;
@@ -14,25 +14,21 @@
   letter-spacing: 0;
   line-height: normal;
   text-align: center;
-  text-decoration: none; /* Add this line to remove any underline */
+  text-decoration: none; 
 }
 
-/* Add styles for different button states and hierarchies as needed */
-
-/* Button style when the checkbox is unchecked */
 .button-unchecked {
   background-color: #494843;
   color: #ffffff;
 }
 
-/* Button style when the checkbox is checked */
+
 .button-checked {
   background-color: black;
   color: white;
+  cursor: pointer;
 }
-
-/* Add styles for the disabled state */
 .button.disabled {
-  opacity: 0.6; /* Adjust the opacity as needed for the disabled state */
-  pointer-events: none; /* Disable pointer events to prevent interactions with the button */
+  opacity: 0.6; 
+  pointer-events: none; 
 }

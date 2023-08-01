@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import "./Button.css";
+import "./ButtonUpload.css";
 
 const Button = ({ hierarchy, state, className }) => {
   return (

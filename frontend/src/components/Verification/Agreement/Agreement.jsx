@@ -15,7 +15,7 @@ const Verification = () => {
 
     const handleOnClick = () => {
         if (isChecked) {
-            window.location.href = "/review";
+            window.location.href = "/upload";
           }
       };
   return (
