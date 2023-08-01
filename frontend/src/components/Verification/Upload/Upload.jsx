@@ -4,13 +4,41 @@ import image from "../../../assets/Vector.png";
 import Button from "./Button/ButtonUpload";
 import filearrow from "../../../assets/file-arrow.png";
 import "./Upload.css";
+import axios from "axios";
 
 const VerificationInfo = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const fileInputRef = useRef(null);
 
-  const handleOnClick = () => {
-    window.location.href = "/upload";
+  const handleSendVerificationEmail = async () => {
+    if (!selectedFile) {
+      alert("Please upload a file for verification.");
+      return;
+    }
+
+    try {
+      // Sending the file to the server for verification email
+      const formData = new FormData();
+      formData.append("file", selectedFile);
+
+      await axios.post("/send-verification-email", formData, {
+        headers: { "Content-Type": "multipart/form-data" },
+      });
+
+      setSelectedFile(null);
+      alert("Verification email sent successfully!");
+    } catch (error) {
+      console.error("Error sending verification email:", error);
+      alert("Failed to send verification email.");
+    }
+  };
+
+  const handleOnClick = async () =>  {
+    const emailSent = await handleSendVerificationEmail();
+
+    if(emailSent)
+    window.location.href = "/review";
+    
   };
 
   const handleFileChange = (event) => {
@@ -20,10 +48,9 @@ const VerificationInfo = () => {
   const handleFileUpload = () => {
     console.log("Selected File:", selectedFile);
     setSelectedFile(null);
-    // Perform the file upload logic here
-    // For example, you can use 'selectedFile' to upload the file to your server or perform other actions.
-    // You may need to make an API call to send the file to the server, etc.
   };
+
+  const isVerifyButtonDisabled = !selectedFile;
 
   return (
     <div className="verification-info">
@@ -38,7 +65,7 @@ const VerificationInfo = () => {
             </p>
           </div>
           <div className="frame-3">
-            <button className={`button button-instance`} onClick={handleOnClick}>
+            <button className={`button button-instance${selectedFile ? " cursor-pointer" : ""}`} onClick={handleOnClick} disabled={isVerifyButtonDisabled}>
               Verify
             </button>
             <div className="text-wrapper-2">Back</div>
@@ -72,9 +99,13 @@ const VerificationInfo = () => {
               >
                 Browse
               </button>
-              {selectedFile && <p>Selected File: {selectedFile.name}</p>}
             </div>
           </div>
+          {selectedFile && (
+            <div className="file-name-display">
+              <p>Selected File: {selectedFile.name}</p>
+            </div>
+          )}
         </div>
         <p className="if-you-are">
           <span className="span">

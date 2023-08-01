@@ -50,6 +50,7 @@
   width: fit-content;
 }
 
+
 .verification-info .verify-your-account {
   color: #000000;
   font-family: "DM Sans-Regular", Helvetica;
@@ -81,6 +82,14 @@
   width: 480px !important;
   background-color :#1c1b1a;;
   border: #000000;
+}
+
+.verification-info .button-instance:hover {
+ 
+  background-color :#1c1b1a;;
+  border: #000000;
+  color: white;
+
 }
 
 .verification-info .text-wrapper-2 {
@@ -230,6 +239,7 @@
   color: #2f6eed;
   font-family: "DM Sans-Medium", Helvetica;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .verification-info .vector {

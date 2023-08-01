@@ -8,6 +8,14 @@
     justify-content: center;
     position: relative;
   }
+
+  .verification-info .button-instance:hover {
+ 
+    background-color :#1c1b1a;;
+    border: #000000;
+    color: white;
+  
+  }
   
   .button .div {
     font-family: "DM Sans-Medium", Helvetica;
@@ -20,10 +28,9 @@
   }
   
   .button.design-component-instance-node:hover {
-    cursor: pointer; /* Change the cursor to a pointer (hand) on hover */
+    cursor: pointer; 
     opacity: 0.8; 
-   /* Reduce the opacity slightly on hover to indicate interactivity */
-    /* Add any other styles you want to apply when hovering over the button */
+   
   }
   .button.secondary {
     border: 2px solid;
@@ -35,12 +42,18 @@
     opacity: 0.6;
   }
   
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
   .button.primary {
     padding: 0px 24px;
+    opacity: 0.9;
   }
   
   .button.primary.pressed {
     background-color: #1c1b1a;
+    opacity: 0.9;
   }
   
   .button.primary.disabled {
