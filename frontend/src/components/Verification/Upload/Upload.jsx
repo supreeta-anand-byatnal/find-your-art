@@ -68,7 +68,7 @@ const VerificationInfo = () => {
             <button className={`button button-instance${selectedFile ? " cursor-pointer" : ""}`} onClick={handleOnClick} disabled={isVerifyButtonDisabled}>
               Verify
             </button>
-            <div className="text-wrapper-2">Back</div>
+            <a className="text-wrapper-2" href="verify">Back</a>
           </div>
         </div>
         <div className="upload-images-files">

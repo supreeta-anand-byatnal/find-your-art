@@ -30,7 +30,7 @@ const VerificationUnder = () => {
           <div className="frame-wrapper">
             <div className="frame-3">
               <div className="button-instance" hierarchy="primary" state="default" text="Login" />
-              <div className="text-wrapper-2">Back to home page</div>
+              <a className="text-wrapper-2" href="/home">Back to home page</a>
             </div>
           </div>
         </div>

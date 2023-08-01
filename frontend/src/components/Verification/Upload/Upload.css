@@ -101,6 +101,7 @@
   line-height: 22px;
   position: relative;
   white-space: nowrap;
+  text-decoration: none;
   width: fit-content;
 }
 

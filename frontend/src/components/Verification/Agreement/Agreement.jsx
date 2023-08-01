@@ -13,6 +13,8 @@ const Verification = () => {
       setIsChecked(!isChecked);
     };
 
+
+
     const handleOnClick = () => {
         if (isChecked) {
             window.location.href = "/upload";
@@ -46,7 +48,7 @@ const Verification = () => {
           disabled={!isChecked}
         >
           Continue to verification
-        </button><div className="text-wrapper-2">Back</div>
+        </button><a className="text-wrapper-2" href="/signup/role">Back</a>
           </div>
         </div>
         <img className="vector" alt="Vector" src={img} />
