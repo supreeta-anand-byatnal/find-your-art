@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
     res.send('Hello, World!');
 });
 app.use('/auth', authRoutes);
-// For testing only
 app.use('/user', userRoutes);
 
 module.exports = app
