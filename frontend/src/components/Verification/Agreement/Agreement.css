@@ -1,0 +1,133 @@
+.verification {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .verification .div {
+    color: #000000;
+    border: 2px none;
+    height: 1000px;
+    position: relative;
+    width: 1200px;
+  }
+  
+  .verification .frame {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 92px;
+    justify-content: center;
+    left: 581px;
+    padding: 0px 60px;
+    position: absolute;
+    top: 160px;
+    width: 619px;
+  }
+  
+  .verification .frame-2 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    width: 480px;
+  }
+  
+  .verification .text-wrapper {
+    color: #000000;
+    font-family: "DM Sans-Medium", Helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .verification .verification-is {
+    align-self: stretch;
+    color: #000000;
+    font-family: "DM Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: relative;
+  }
+  
+  .verification .frame-3 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 9px;
+    position: relative;
+  }
+  
+  .verification .checkbox {
+    height: 24px !important;
+    position: relative !important;
+    width: 24px !important;
+  }
+  
+  .verification .p {
+    color: #000000;
+    font-family: "DM Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .verification .frame-4 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 443px;
+    width: 600px;
+  }
+  
+  .verification .button-instance {
+    opacity: 0.6;
+    width: 480px ;
+  }
+  
+  .verification .text-wrapper-2 {
+    color: #8d8d8d;
+    font-family: "DM Sans-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 22px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .verification .vector {
+    height: 1000px;
+    left: -120px; /* Adjust this value to move the image horizontally */
+    position: absolute;
+    top: 0;
+    width: 700px;
+  }
+  
+  .verification .FYA-logo {
+    height: 35px;
+    left: 649px;
+    position: absolute;
+    top: 32px;
+    width: 174px;
+  }
+  

@@ -1,0 +1,243 @@
+.verification-info {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+  }
+
+.verification-info .div {
+  background-color: #ffffff;
+  border: 2px none;
+  height: 1000px;
+  position: relative;
+  width: 0%;
+}
+
+.verification-info .frame {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  left: 600px;
+  padding: 0px 60px;
+  position: absolute;
+  top: 160px;
+  width: 600px;
+}
+
+.verification-info .frame-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  margin-right: -28px;
+  position: relative;
+}
+
+.verification-info .text-wrapper {
+  color: #000000;
+  font-family: "DM Sans-Medium", Helvetica;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.verification-info .verify-your-account {
+  color: #000000;
+  font-family: "DM Sans-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22px;
+  top: 100px;
+  position: relative;
+  width: 508px;
+}
+
+.verification-info .frame-3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 500px;
+  width: 600px;
+}
+
+.verification-info .button-instance {
+  display: flex !important;
+  opacity: 0.6 !important;
+
+  width: 480px !important;
+}
+
+.verification-info .text-wrapper-2 {
+  color: #8d8d8d;
+  font-family: "DM Sans-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.verification-info .upload-images-files {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  left: 660px;
+  position: absolute;
+  top: 315px;
+  width: 480px;
+}
+
+.verification-info .label {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 2px 2px;
+  position: relative;
+}
+
+.verification-info .text-wrapper-3 {
+  color: #3d3d3d;
+  font-family: "DM Sans-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 11px;
+  position: relative;
+  width: fit-content;
+}
+
+.verification-info .asterisk {
+  height: 8px;
+  position: relative;
+  width: 8px;
+}
+
+.verification-info .e-g-teaching {
+  color: #6a6a68;
+  font-family: "DM Sans-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 10px;
+  position: relative;
+  width: fit-content;
+}
+
+.verification-info .input-field {
+  align-self: stretch;
+  background-color: var(--neutral-0);
+  border: 1px dashed;
+  border-color: var(--neutral-600);
+  border-radius: 12px;
+  height: 176px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.verification-info .frame-4 {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  left: 108px;
+  position: relative;
+  top: 18px;
+}
+
+.verification-info .file-arrow-up {
+  height: 48px;
+  position: absolute;
+  width: 48px;
+}
+.verification-info .p-verify {
+    color: var(--neutral-700);
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    font-style: var(--body-font-style);
+    font-weight: var(--body-font-weight);
+    letter-spacing: var(--body-letter-spacing);
+    line-height: var(--body-line-height);
+    position: relative;
+    width: fit-content;
+    top: -10px;
+  }
+.verification-info .p {
+  color: var(--neutral-700);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-style: var(--body-font-style);
+  font-weight: var(--body-font-weight);
+  letter-spacing: var(--body-letter-spacing);
+  line-height: var(--body-line-height);
+  position: relative;
+  width: fit-content;
+  top: 40px;
+}
+
+.verification-info .design-component-instance-node {
+  display: flex !important;
+  height: 39px !important;
+  top: 30px;
+  width: 112px !important;
+}
+
+.verification-info .if-you-are {
+  color: transparent;
+  font-family: "DM Sans-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 646px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 800px;
+  width: 453px;
+}
+
+.verification-info .span {
+  color: #000000;
+  top: -10px;
+
+}
+
+.verification-info .text-wrapper-4 {
+  color: #2f6eed;
+  font-family: "DM Sans-Medium", Helvetica;
+  font-weight: 500;
+}
+
+.verification-info .vector {
+    height: 1000px;
+    left: -120px; 
+    position: absolute;
+    top: 0;
+    width: 700px;
+}
+
+.verification-info .FYA-logo {
+  height: 35px;
+  left: 649px;
+  position: absolute;
+  top: 32px;
+  width: 174px;
+}
