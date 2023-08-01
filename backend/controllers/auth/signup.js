@@ -3,12 +3,13 @@ const bcrypt = require('bcrypt');
 // Dummy user data (replace this with a database in production)
 const fs = require('fs');
 const path = require('path');
-const usersFilePath = path.join(__dirname, 'db.json');
+const usersFilePath = path.join(__dirname, '../../db/mock.json');
 const fakeUserDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf8'));
 const writeUsers = (users) => {
     fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
 };
 
+// POST auth/signup
 const signup = async (req, res) => {
     const { username, password } = req.body;
     
