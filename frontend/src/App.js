@@ -1,11 +1,10 @@
 import './App.css';
-import { Routes } from 'react-router-dom';
-import accountRoutes from './routes/accountRoutes';
 import Footer from './components/Footer/Footer';
 import SuggestionCard from './components/SuggestionCard/SuggestionCard';
 import imgsrc1 from './assets/sample_event_card1.jpeg'
 import imgsrc2 from './assets/sample_event_card2.jpeg'
 import imgsrc3 from './assets/sample_event_card3.jpeg'
+import AccountRoutes from './routes/AccountRoutes';
 
 function App() {
   // Sample data for suggestion cards
@@ -42,9 +41,7 @@ function App() {
           ))}
         </div>
       </div>
-      <Routes>
-        {accountRoutes}
-      </Routes>
+      <AccountRoutes />
     </div>
   );
 }
