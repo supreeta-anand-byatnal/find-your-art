@@ -8,11 +8,10 @@ export default function SingleField({
   inputType,
   inputPH,
   inputValue,
-  handleInputChange
+  handleInputChange,
 }) {
-
   function handleChange(value) {
-    handleInputChange({[inputID]: value})
+    handleInputChange({ [inputID]: value });
   }
 
   return (
@@ -24,7 +23,7 @@ export default function SingleField({
         type={inputType}
         placeholder={inputPH}
         value={inputValue}
-        onChange={e => handleChange(e.target.value)}
+        onChange={(e) => handleChange(e.target.value)}
       ></input>
     </div>
   );

@@ -5,9 +5,16 @@ import facebook from '../../../assets/facebook-icon.svg';
 import apple from '../../../assets/apple-icon.svg';
 import { Link } from 'react-router-dom';
 import SingleField from '../SingleField/SingleField'
-import { useState } from 'react';
 
-export default function Login( {loginData, handleInputChange }) {
+export default function Login({ loginData, handleInputChange, handleLogin }) {
+  function handleClick(e) {
+    handleLogin(loginData);
+    handleInputChange({
+      loginEmail: "",
+      loginPassword: "",
+    });
+    e.preventDefault();
+  }
 
   return (
     <div className="form">
@@ -32,7 +39,9 @@ export default function Login( {loginData, handleInputChange }) {
           handleInputChange={handleInputChange}
         />
         <p id="login-forgot-password">Forgot password?</p>
-        <button className="form-submit" >Log in</button>
+        <button className="form-submit" onClick={(e) => handleClick(e)}>
+          Log in
+        </button>
         <p className="form-separator">
           <span>OR</span>
         </p>

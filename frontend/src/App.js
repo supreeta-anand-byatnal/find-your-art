@@ -6,16 +6,20 @@ import imgsrc2 from "./assets/sample_event_card2.jpeg";
 import imgsrc3 from "./assets/sample_event_card3.jpeg";
 import AccountRoutes from "./routes/AccountRoutes";
 import { useState } from "react";
-
+import users from './modules/users'
 
 function App() {
   const [loginData, setLoginData] = useState({
-    loginEmail: '',
-    loginPassword: '',
+    loginEmail: "",
+    loginPassword: "",
   });
 
   function handleInputChange(data) {
     setLoginData({ ...loginData, ...data });
+  }
+
+  function handleLogin() {
+    users.login(loginData);
   }
 
   // Sample data for suggestion cards
@@ -52,7 +56,11 @@ function App() {
           ))}
         </div>
       </div>
-      <AccountRoutes loginData={loginData} handleInputChange={handleInputChange} />
+      <AccountRoutes
+        loginData={loginData}
+        handleInputChange={handleInputChange}
+        handleLogin={handleLogin}
+      />
     </div>
   );
 }
