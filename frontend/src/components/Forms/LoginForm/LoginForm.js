@@ -5,25 +5,39 @@ import facebook from '../../../assets/facebook-icon.svg';
 import apple from '../../../assets/apple-icon.svg';
 import { Link } from 'react-router-dom';
 import SingleField from '../SingleField/SingleField'
+import { useState } from 'react';
 
 export default function Login() {
+  const [loginData, setLoginData] = useState({
+    loginEmail: '',
+    loginPassword: '',
+  });
+
+  function handleInputChange(data) {
+    setLoginData({ ...loginData, ...data });
+  }
+
   return (
     <div className="form">
       <h1>Have an account? Log in.</h1>
       <form>
         <SingleField
           inputTitle="Email"
-          inputID="login-email"
+          inputID="loginEmail"
           inputClass="form-email icon-input"
           inputType="email"
           inputPH="hello@email.com"
+          inputValue={loginData.loginEmail}
+          handleInputChange={handleInputChange}
         />
         <SingleField
           inputTitle="Password"
-          inputID="login-password"
+          inputID="loginPassword"
           inputClass="form-password icon-input"
           inputType="password"
           inputPH="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+          inputValue={loginData.loginPassword}
+          handleInputChange={handleInputChange}
         />
         <p id="login-forgot-password">Forgot password?</p>
         <button className="form-submit">Log in</button>
