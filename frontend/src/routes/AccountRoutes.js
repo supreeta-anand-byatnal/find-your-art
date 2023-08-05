@@ -7,14 +7,14 @@ import EducatorForm from "../components/Forms/EducatorForm";
 import SignupForm from "../components/Forms/SignupForm";
 import LoginForm from "../components/Forms/LoginForm/LoginForm";
 
-export default function AccountRoutes() {
+export default function AccountRoutes({ loginData, handleInputChange }) {
   return (
     <Routes>
       <Route
         path="/login"
         element={
           <Account>
-            <LoginForm />
+            <LoginForm loginData={loginData} handleInputChange={handleInputChange} />
           </Account>
         }
       ></Route>
