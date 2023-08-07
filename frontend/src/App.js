@@ -14,12 +14,37 @@ function App() {
     loginPassword: "",
   });
 
+  const [signUpData, setSignUpData] = useState({
+    signUpEmail: "",
+    signUpPassword: "",
+    signUpRole: "",
+    signUpFirstName: "",
+    signUpLastName: "",
+    signUpPronouns: "",
+    signUpOrganization: "",
+    signUpSubjects: [],
+    signUpGroups: [],
+    signUpCity: "",
+    signUpZip: "",
+    signUpWebsite: "",
+    signUpLinks: [],
+    signUpDisciplines: []
+  })
+
   function handleInputChange(data) {
     setLoginData({ ...loginData, ...data });
   }
 
+  function handleSignUpInput(data) {
+    setSignUpData({ ...signUpData, ...data });
+  }
+
   function handleLogin() {
     users.login(loginData);
+  }
+
+  function handleSignUpRequest() {
+    users.signup(signUpData);
   }
 
   // Sample data for suggestion cards
@@ -60,6 +85,9 @@ function App() {
         loginData={loginData}
         handleInputChange={handleInputChange}
         handleLogin={handleLogin}
+        signUpData={signUpData}
+        handleSignUpRequest={handleSignUpRequest}
+        handleSignUpInput={handleSignUpInput}
       />
     </div>
   );
