@@ -1,9 +1,9 @@
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:3001/login'
+const baseUrl = 'http://localhost:3001'
 
 const login = userData => {
-  const response = axios.post(baseUrl, userData)
+  const response = axios.post(baseUrl + '/auth/login', userData)
   return response.then(response => response.data)
 }
 
