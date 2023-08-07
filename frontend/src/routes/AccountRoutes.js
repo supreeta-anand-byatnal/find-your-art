@@ -11,6 +11,9 @@ export default function AccountRoutes({
   loginData,
   handleInputChange,
   handleLogin,
+  signUpData,
+  handleSignUpInput,
+  handleSignUpRequest,
 }) {
   return (
     <Routes>
@@ -38,7 +41,11 @@ export default function AccountRoutes({
         path="/signup/organization"
         element={
           <Account>
-            <OrgForm />
+            <OrgForm
+              signUpData={signUpData}
+              handleSignUpInput={handleSignUpInput}
+              handleSignUpRequest={handleSignUpRequest}
+            />
           </Account>
         }
       ></Route>
@@ -46,7 +53,11 @@ export default function AccountRoutes({
         path="/signup/educator"
         element={
           <Account>
-            <EducatorForm />
+            <EducatorForm
+              signUpData={signUpData}
+              handleSignUpInput={handleSignUpInput}
+              handleSignUpRequest={handleSignUpRequest}
+            />
           </Account>
         }
       ></Route>
@@ -54,7 +65,11 @@ export default function AccountRoutes({
         path="/signup/role"
         element={
           <Account>
-            <RoleForm />
+            <RoleForm
+              signUpData={signUpData}
+              handleSignUpInput={handleSignUpInput}
+              handleSignUpRequest={handleSignUpRequest}
+            />
           </Account>
         }
       ></Route>
@@ -62,7 +77,11 @@ export default function AccountRoutes({
         path="/signup"
         element={
           <Account>
-            <SignupForm />
+            <SignupForm
+              signUpData={signUpData}
+              handleSignUpInput={handleSignUpInput}
+              handleSignUpRequest={handleSignUpRequest}
+            />
           </Account>
         }
       ></Route>
