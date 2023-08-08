@@ -5,6 +5,7 @@ import Review from './components/Verification/Review/Review';
 import Upload from './components/Verification/Upload/Upload';
 
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import Event from './pages/Event/Event';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/verify' Component={Verification}></Route>
         <Route path='/review' Component={Review}></Route>
         <Route path='/upload' Component={Upload}></Route>
+        <Route path="/event" Component={Event}></Route>
       </Routes>
       </div>
   );
