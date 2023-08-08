@@ -5,12 +5,16 @@
 
 .event-details img {
     width: 100%;
-    height: undefined
+    height: undefined;
+}
+
+.event-details p {
+    margin-block: 0;
 }
 
 .event-details-container {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     gap: 2rem;
 }
@@ -20,13 +24,21 @@
     max-width: 75%;
 }
 
-.event-price {
-    width: 25%;
-}
-
-.event-details-container {
+.event-info {
     display: flex;
     flex-direction: row;
+    gap: 0.5rem;
+}
+
+.event-info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.event-info img {
+    width: 24px;
+    height: 24px;
 }
 
 .tag {
@@ -48,4 +60,33 @@
 
 .event-organizer-container img {
     width: 4rem;
+}
+
+.event-price {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    border: 1px solid #D6D6D6;
+}
+
+.event-price p {
+    text-align: center;
+    width: 10rem;
+}
+
+.event-price button {
+    display: flex;
+    width: 75%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background: #494847;
+    color: #FFFFFF;
 }
