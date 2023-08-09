@@ -45,7 +45,7 @@ function App() {
   }
 
   function handleSignUpRequest() {
-    users.signup(signUpData);
+    users.signUp(signUpData);
   }
 
   // Sample data for suggestion cards
