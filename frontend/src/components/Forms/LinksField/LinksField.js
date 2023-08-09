@@ -4,16 +4,16 @@ import './LinksField.css'
 export default function LinksField({inputID, inputTitle, inputPH, signUpData, handleSignUpInput}) {
 
   function handleClick(e) {
-    handleSignUpInput({ [inputID]: [...signUpData.signUpLinks, ""] })
+    handleSignUpInput({ [inputID]: [...signUpData[inputID], ""] })
     e.preventDefault();
   }
 
   function updateLink(e, pIndex) {
-    handleSignUpInput({ [inputID]: signUpData.signUpLinks.map((link, index) => (index === pIndex ? e.target.value : link)) });
+    handleSignUpInput({ [inputID]: signUpData[inputID].map((link, index) => (index === pIndex ? e.target.value : link)) });
   }
 
   function deleteLink(e, pIndex) {
-    handleSignUpInput({ [inputID]: signUpData.signUpLinks.filter((link, index) => pIndex !== index) })
+    handleSignUpInput({ [inputID]: signUpData[inputID].filter((link, index) => pIndex !== index) })
     e.preventDefault();
   }
 
@@ -22,7 +22,7 @@ export default function LinksField({inputID, inputTitle, inputPH, signUpData, ha
       <label>{inputTitle}</label>
       {signUpData.signUpLinks.map((link, index) => (
         <div>
-          <input type="text" placeholder={inputPH} value={signUpData.signUpLinks[index]} onChange={(e) => updateLink(e, index)}></input>
+          <input type="text" placeholder={inputPH} value={signUpData[inputID][index]} onChange={(e) => updateLink(e, index)}></input>
           <button id="links-delete" onClick={(e) => deleteLink(e, index)}>
             Remove
           </button>
