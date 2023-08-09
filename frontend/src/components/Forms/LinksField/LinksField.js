@@ -20,7 +20,7 @@ export default function LinksField({inputID, inputTitle, inputPH, signUpData, ha
   return (
     <div id="links-field">
       <label>{inputTitle}</label>
-      {signUpData.signUpLinks.map((link, index) => (
+      {signUpData[inputID].map((link, index) => (
         <div>
           <input type="text" placeholder={inputPH} value={signUpData[inputID][index]} onChange={(e) => updateLink(e, index)}></input>
           <button id="links-delete" onClick={(e) => deleteLink(e, index)}>
