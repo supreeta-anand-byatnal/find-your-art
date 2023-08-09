@@ -1,31 +1,28 @@
 import React, { useState } from 'react'
 import './LinksField.css'
 
-export default function LinksField({inputTitle, inputPH}) {
-  const [links, setLinks] = useState([]);
+export default function LinksField({inputID, inputTitle, inputPH, signUpData, handleSignUpInput}) {
 
   function handleClick(e) {
-    setLinks([...links, ""]);
+    handleSignUpInput({ [inputID]: [...signUpData.signUpLinks, ""] })
     e.preventDefault();
   }
 
   function updateLink(e, pIndex) {
-    setLinks(
-      links.map((link, index) => (index === pIndex ? e.target.value : link))
-    );
+    handleSignUpInput({ [inputID]: signUpData.signUpLinks.map((link, index) => (index === pIndex ? e.target.value : link)) });
   }
 
   function deleteLink(e, pIndex) {
-    setLinks(links.filter((link, index) => pIndex !== index));
+    handleSignUpInput({ [inputID]: signUpData.signUpLinks.filter((link, index) => pIndex !== index) })
     e.preventDefault();
   }
 
   return (
     <div id="links-field">
       <label>{inputTitle}</label>
-      {links.map((link, index) => (
+      {signUpData.signUpLinks.map((link, index) => (
         <div>
-          <input type="text" placeholder={inputPH} value={links[index]}onChange={(e) => updateLink(e, index)}></input>
+          <input type="text" placeholder={inputPH} value={signUpData.signUpLinks[index]} onChange={(e) => updateLink(e, index)}></input>
           <button id="links-delete" onClick={(e) => deleteLink(e, index)}>
             Remove
           </button>
