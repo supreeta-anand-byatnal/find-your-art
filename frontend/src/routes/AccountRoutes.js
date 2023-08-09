@@ -33,7 +33,11 @@ export default function AccountRoutes({
         path="/signup/artist"
         element={
           <Account>
-            <ArtistForm />
+            <ArtistForm 
+              signUpData={signUpData}
+              handleSignUpInput={handleSignUpInput}
+              handleSignUpRequest={handleSignUpRequest}
+            />
           </Account>
         }
       ></Route>
