@@ -17,7 +17,7 @@ function App() {
   const [signUpData, setSignUpData] = useState({
     signUpEmail: "",
     signUpPassword: "",
-    SignUpConfirm: "",
+    signUpConfirm: "",
     signUpRole: "",
     signUpFirstName: "",
     signUpLastName: "",
