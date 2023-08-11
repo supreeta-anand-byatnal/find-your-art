@@ -32,7 +32,7 @@ function App() {
     signUpDisciplines: []
   })
 
-  function handleInputChange(data) {
+  function handleLoginInput(data) {
     setLoginData({ ...loginData, ...data });
   }
 
@@ -40,7 +40,7 @@ function App() {
     setSignUpData({ ...signUpData, ...data });
   }
 
-  function handleLogin() {
+  function handleLoginRequest() {
     users.login(loginData);
   }
 
@@ -84,8 +84,8 @@ function App() {
       </div>
       <AccountRoutes
         loginData={loginData}
-        handleInputChange={handleInputChange}
-        handleLogin={handleLogin}
+        handleLoginInput={handleLoginInput}
+        handleLoginRequest={handleLoginRequest}
         signUpData={signUpData}
         handleSignUpRequest={handleSignUpRequest}
         handleSignUpInput={handleSignUpInput}

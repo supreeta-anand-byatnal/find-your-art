@@ -9,8 +9,8 @@ import LoginForm from "../components/Forms/LoginForm/LoginForm";
 
 export default function AccountRoutes({
   loginData,
-  handleInputChange,
-  handleLogin,
+  handleLoginInput,
+  handleLoginRequest,
   signUpData,
   handleSignUpInput,
   handleSignUpRequest,
@@ -23,8 +23,8 @@ export default function AccountRoutes({
           <Account>
             <LoginForm
               loginData={loginData}
-              handleInputChange={handleInputChange}
-              handleLogin={handleLogin}
+              handleLoginInput={handleLoginInput}
+              handleLoginRequest={handleLoginRequest}
             />
           </Account>
         }

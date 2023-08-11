@@ -6,10 +6,10 @@ import apple from '../../../assets/apple-icon.svg';
 import { Link } from 'react-router-dom';
 import SingleField from '../SingleField/SingleField'
 
-export default function Login({ loginData, handleInputChange, handleLogin }) {
+export default function Login({ loginData, handleLoginInput, handleLoginRequest }) {
   function handleClick(e) {
-    handleLogin(loginData);
-    handleInputChange({
+    handleLoginRequest(loginData);
+    handleLoginInput({
       loginEmail: "",
       loginPassword: "",
     });
@@ -27,7 +27,7 @@ export default function Login({ loginData, handleInputChange, handleLogin }) {
           inputType="email"
           inputPH="hello@email.com"
           inputValue={loginData.loginEmail}
-          handleInputChange={handleInputChange}
+          handleInputChange={handleLoginInput}
         />
         <SingleField
           inputTitle="Password"
@@ -36,7 +36,7 @@ export default function Login({ loginData, handleInputChange, handleLogin }) {
           inputType="password"
           inputPH="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
           inputValue={loginData.loginPassword}
-          handleInputChange={handleInputChange}
+          handleInputChange={handleLoginInput}
         />
         <p id="login-forgot-password">Forgot password?</p>
         <button className="form-submit" onClick={(e) => handleClick(e)}>
