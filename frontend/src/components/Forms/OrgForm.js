@@ -20,16 +20,16 @@ export default function OrgForm({ signUpData, handleSignUpInput, handleSignUpReq
           inputID="signUpOrganization"
           inputType="text"
           inputPH="Organization name"
-          signUpData={signUpData}
-          handleSignUpInput={handleSignUpInput}
+          inputValue={signUpData.signUpOrganization}
+          handleInputChange={handleSignUpInput}
         />
         <SingleField
           inputTitle="Website"
           inputID="signUpWebsite"
           inputType="text"
           inputPH="www.organization.com"
-          signUpData={signUpData}
-          handleSignUpInput={handleSignUpInput}
+          inputValue={signUpData.signUpWebsite}
+          handleInputChange={handleSignUpInput}
         />
         <LinksField inputID="signUpLinks" inputTitle="Social Media Link(s)" inputPH="www.yoursocialmedia.com"  handleSignUpInput={handleSignUpInput} signUpData={signUpData}/>
         <TagField
