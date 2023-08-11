@@ -29,7 +29,8 @@ function App() {
     signUpZip: "",
     signUpWebsite: "",
     signUpLinks: [],
-    signUpDisciplines: []
+    signUpDisciplines: [],
+    signUpAssociations: []
   })
 
   function handleLoginInput(data) {
