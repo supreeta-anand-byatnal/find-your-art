@@ -1,12 +1,17 @@
-import "./App.css";
-import Footer from "./components/Footer/Footer";
-import SuggestionCard from "./components/SuggestionCard/SuggestionCard";
-import imgsrc1 from "./assets/sample_event_card1.jpeg";
-import imgsrc2 from "./assets/sample_event_card2.jpeg";
-import imgsrc3 from "./assets/sample_event_card3.jpeg";
+import './App.css';
+import { Routes } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
+import SuggestionCard from './components/SuggestionCard/SuggestionCard';
+import imgsrc1 from './assets/sample_event_card1.jpeg'
+import imgsrc2 from './assets/sample_event_card2.jpeg'
+import imgsrc3 from './assets/sample_event_card3.jpeg'
 import AccountRoutes from "./routes/AccountRoutes";
 import { useState } from "react";
 import users from './modules/users'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Verification from './components/Verification/Agreement/Agreement';
+import Review from './components/Verification/Review/Review';
+import Upload from './components/Verification/Upload/Upload';
 
 function App() {
   const [loginData, setLoginData] = useState({
@@ -53,21 +58,21 @@ function App() {
   const suggestionData = [
     {
       imageUrl: imgsrc1,
-      title: "Event Title 1",
-      description: "Lorem ipsum dolor sit amet consectetur. Sed tincidunt...",
+      title: 'Event Title 1',
+      description: 'Lorem ipsum dolor sit amet consectetur. Sed tincidunt...',
     },
     {
       imageUrl: imgsrc2,
-      title: "Event Title 2",
-      description: "Lorem ipsum dolor sit amet consectetur. Sed tincidunt...",
+      title: 'Event Title 2',
+      description: 'Lorem ipsum dolor sit amet consectetur. Sed tincidunt...',
     },
     {
       imageUrl: imgsrc3,
-      title: "Event Title 3",
-      description: "Lorem ipsum dolor sit amet consectetur. Sed tincidunt...",
+      title: 'Event Title 3',
+      description: 'Lorem ipsum dolor sit amet consectetur. Sed tincidunt...',
     },
   ];
-
+  
   return (
     <div className="App">
       <div className="suggestion-section">
@@ -83,6 +88,11 @@ function App() {
           ))}
         </div>
       </div>
+      <Routes>
+        <Route path='/verify' Component={Verification}></Route>
+        <Route path='/review' Component={Review}></Route>
+        <Route path='/upload' Component={Upload}></Route>
+      </Routes>
       <AccountRoutes
         loginData={loginData}
         handleLoginInput={handleLoginInput}
