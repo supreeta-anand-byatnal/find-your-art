@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Event.css';
 import event from '../../assets/sample_event_page.png';
 import organizer from '../../assets/Ellipse 797.svg';
@@ -7,7 +7,79 @@ import map from '../../assets/MapPin.svg';
 import NavBar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 
+const TextInput = ({ label, value, onChange, required }) => (
+  <div className="form-group">
+    <label htmlFor={label}>{label}:</label>
+    <input
+      type="text"
+      id={label}
+      value={value}
+      onChange={onChange}
+      required={required}
+    />
+  </div>
+);
+
+const TextAreaInput = ({ label, value, onChange }) => (
+  <div className="form-group">
+    <label htmlFor={label}>{label}:</label>
+    <textarea
+      id={label}
+      value={value}
+      onChange={onChange}
+      // required={required}
+    />
+  </div>
+);
+
+const PopupForm = ({ isOpen }) => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can perform your form submission logic
+    console.log('Submitted:', { name, email, message });
+  };
+
+  return (
+    <div className={`popup ${isOpen ? 'open' : ''}`}>
+      <div className="popup-content">
+        <h2>Request Form</h2>
+        <form onSubmit={handleSubmit}>
+          <TextInput
+            label="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          <TextInput
+            label="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <TextAreaInput
+            label="Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            // required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
 const Event = () => {
+  const [popupOpen, setPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setPopupOpen(true);
+  };
+
   return (
     <>
       <NavBar />
@@ -48,11 +120,12 @@ const Event = () => {
           </div>
           <div className='event-price'>
               <p>$10 / person</p>
-              <button type="button">Request ticket(s)</button>
+              <button type="button" onClick={openPopup}>Request ticket(s)</button>
               <p>View subsidization request form <a href="">here</a></p>
           </div>
         </div>
       </div>
+      {popupOpen && <PopupForm isOpen={popupOpen} />}
       {/* <Footer /> */}
     </>
   );
