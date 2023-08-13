@@ -1,6 +1,16 @@
-.event-details {
+.event-page {
     flex-shrink: 0;
     padding: 1.5rem 5rem;
+}
+
+.event-page button {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background: #494847;
+    color: #FFFFFF;
 }
 
 .event-details img {
@@ -81,12 +91,5 @@
 }
 
 .event-price button {
-    display: flex;
     width: 75%;
-    height: 3rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2rem;
-    background: #494847;
-    color: #FFFFFF;
 }
