@@ -1,8 +1,6 @@
 import './CheckboxList.css';
 
-import React, { useState } from 'react';
-
-const CheckboxList = ({ options, selectedOptions, onCheckboxChange }) => {
+const CheckboxList = ({ label, options, selectedOptions, onCheckboxChange }) => {
   const handleCheckboxChange = (option) => {
     if (selectedOptions.includes(option)) {
       onCheckboxChange(selectedOptions.filter((item) => item !== option));
@@ -12,8 +10,8 @@ const CheckboxList = ({ options, selectedOptions, onCheckboxChange }) => {
   };
 
   return (
-    <div>
-      <h2>Select Options</h2>
+    <div className="form-group">
+      <label htmlFor={label}>{label}</label>
       {options.map((option) => (
         <label key={option}>
           <input

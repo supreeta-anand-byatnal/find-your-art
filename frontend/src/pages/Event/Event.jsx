@@ -8,20 +8,9 @@ import NavBar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import TextInput from '../../components/TextInput/TextInput';
 import CheckboxList from '../../components/CheckboxList/CheckboxList';
+import TextAreaInput from '../../components/TextAreaInput/TextAreaInput';
 
-
-const TextAreaInput = ({ label, value, onChange }) => (
-  <div className="form-group">
-    <label htmlFor={label}>{label}:</label>
-    <textarea
-      id={label}
-      value={value}
-      onChange={onChange}
-    />
-  </div>
-);
-
-const PopupForm = ({ isOpen }) => {
+const RequestForm = ({ isOpen }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [selectedServices, setSelectedServices] = useState([]);
@@ -42,8 +31,8 @@ const PopupForm = ({ isOpen }) => {
   };
 
   return (
-    <div className={`popup ${isOpen ? 'open' : ''}`}>
-      <div className="popup-content">
+    <div className={`form ${isOpen ? 'open' : ''}`}>
+      <div className="form-content">
         <h2>Request Form</h2>
         <form onSubmit={handleSubmit}>
           <TextInput
@@ -54,6 +43,7 @@ const PopupForm = ({ isOpen }) => {
             required
           />
           <CheckboxList 
+            label="Event services"
             options={eventServices}
             selectedOptions={selectedServices}
             onCheckboxChange={setSelectedServices}
@@ -78,10 +68,10 @@ const PopupForm = ({ isOpen }) => {
 };
 
 const Event = () => {
-  const [popupOpen, setPopupOpen] = useState(false);
+  const [formOpen, setFormOpen] = useState(false);
 
-  const openPopup = () => {
-    setPopupOpen(true);
+  const openForm = () => {
+    setFormOpen(true);
   };
 
   return (
@@ -124,12 +114,12 @@ const Event = () => {
           </div>
           <div className='event-price'>
               <p>$10 / person</p>
-              <button type="button" onClick={openPopup}>Request ticket(s)</button>
+              <button type="button" onClick={openForm}>Request ticket(s)</button>
               <p>View subsidization request form <a href="">here</a></p>
           </div>
         </div>
       </div>
-      {popupOpen && <PopupForm isOpen={popupOpen} />}
+      {formOpen && <RequestForm isOpen={formOpen} />}
       {/* <Footer /> */}
     </>
   );

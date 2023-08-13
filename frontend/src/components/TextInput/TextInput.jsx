@@ -1,9 +1,8 @@
 import './TextInput.css';
 
 const TextInput = ({ label, value, onChange, placeholder, required }) => (
-    <>
     <div className="form-group">
-        <label htmlFor={label}>{label}:</label>
+        <label htmlFor={label}>{label}</label>
         <input
             type="text"
             id={label}
@@ -13,7 +12,6 @@ const TextInput = ({ label, value, onChange, placeholder, required }) => (
             required={required}
         />
     </div>
-    </>
 );
 
 export default TextInput;
