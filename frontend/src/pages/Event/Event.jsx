@@ -7,6 +7,7 @@ import map from '../../assets/MapPin.svg';
 import NavBar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import TextInput from '../../components/TextInput/TextInput';
+import CheckboxList from '../../components/CheckboxList/CheckboxList';
 
 
 const TextAreaInput = ({ label, value, onChange }) => (
@@ -23,12 +24,21 @@ const TextAreaInput = ({ label, value, onChange }) => (
 const PopupForm = ({ isOpen }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [selectedServices, setSelectedServices] = useState([]);
   const [message, setMessage] = useState('');
+
+  const eventServices = [
+    'Ticket request',
+    'Ticket subsidization',
+    'Pre- and post-event workshop',
+    'Post-event discussion'
+  ]
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Here you can perform your form submission logic
-    console.log('Submitted:', { name, email, message });
+    // Set form to empty
+    console.log('Submitted:', { name, selectedServices, email, message });
   };
 
   return (
@@ -42,6 +52,11 @@ const PopupForm = ({ isOpen }) => {
             onChange={(e) => setName(e.target.value)}
             placeholder={'Jane Doe'}
             required
+          />
+          <CheckboxList 
+            options={eventServices}
+            selectedOptions={selectedServices}
+            onCheckboxChange={setSelectedServices}
           />
           <TextInput
             label="Email"
