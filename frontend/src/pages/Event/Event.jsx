@@ -6,19 +6,8 @@ import calendar from '../../assets/CalendarBlank.svg';
 import map from '../../assets/MapPin.svg';
 import NavBar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import TextInput from '../../components/TextInput/TextInput';
 
-const TextInput = ({ label, value, onChange, required }) => (
-  <div className="form-group">
-    <label htmlFor={label}>{label}:</label>
-    <input
-      type="text"
-      id={label}
-      value={value}
-      onChange={onChange}
-      required={required}
-    />
-  </div>
-);
 
 const TextAreaInput = ({ label, value, onChange }) => (
   <div className="form-group">
@@ -27,7 +16,6 @@ const TextAreaInput = ({ label, value, onChange }) => (
       id={label}
       value={value}
       onChange={onChange}
-      // required={required}
     />
   </div>
 );
@@ -52,19 +40,20 @@ const PopupForm = ({ isOpen }) => {
             label="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            placeholder={'Jane Doe'}
             required
           />
           <TextInput
             label="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            placeholder={'janedoe@newyorkschools.org'}
             required
           />
           <TextAreaInput
             label="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            // required
           />
           <button type="submit">Submit</button>
         </form>
