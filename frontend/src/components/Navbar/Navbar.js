@@ -9,7 +9,11 @@ export default function Navbar() {
     <nav id="navbar-container">
       <img src={logo} alt="fya logo" />
       <ul>
-        <li>Explore</li>
+        <li>
+          <Link to="/home">
+            Explore
+          </Link>
+        </li>
         <li>
           <Link to="https://www.changearts.org/classroomsandcommunities" target="_blank">
             Partners
