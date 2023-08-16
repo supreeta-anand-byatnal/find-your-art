@@ -13,7 +13,10 @@ export default function Navbar() {
         <li>Partners</li>
         <li>FAQs</li>
         <li id="navbar-donate">
-          <img src={donate} alt="donate icon" /> Donate
+          <Link to="https://donorbox.org/change-arts-donation" target="_blank">
+            <img src={donate} alt="donate icon" />
+            <p>Donate</p>
+          </Link>
         </li>
       </ul>
       <div id="navbar-button-container">
