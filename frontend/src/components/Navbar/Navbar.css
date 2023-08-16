@@ -51,15 +51,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #d33d6c;
   gap: 0.5rem;
-  text-align: center;
 }
 
 #navbar-donate p {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
+  color: #d33d6c;
 }
 
 #navbar-container a {
