@@ -6,6 +6,9 @@ import RoleForm from "../components/Forms/RoleForm";
 import EducatorForm from "../components/Forms/EducatorForm";
 import SignupForm from "../components/Forms/SignupForm";
 import LoginForm from "../components/Forms/LoginForm/LoginForm";
+import Verification from '../components/Verification/Agreement/Agreement';
+import Review from '../components/Verification/Review/Review';
+import Upload from '../components/Verification/Upload/Upload';
 
 export default function AccountRoutes({
   loginData,
@@ -17,6 +20,9 @@ export default function AccountRoutes({
 }) {
   return (
     <Routes>
+      <Route path="/verify" Component={Verification}></Route>
+      <Route path="/review" Component={Review}></Route>
+      <Route path="/upload" Component={Upload}></Route>
       <Route
         path="/login"
         element={
@@ -33,7 +39,7 @@ export default function AccountRoutes({
         path="/signup/artist"
         element={
           <Account>
-            <ArtistForm 
+            <ArtistForm
               signUpData={signUpData}
               handleSignUpInput={handleSignUpInput}
               handleSignUpRequest={handleSignUpRequest}
