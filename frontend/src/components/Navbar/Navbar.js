@@ -11,7 +11,11 @@ export default function Navbar() {
       <ul>
         <li>Explore</li>
         <li>Partners</li>
-        <li>FAQs</li>
+        <li>
+        <Link to="https://www.changearts.org/contactandfaq" target="_blank">
+            FAQs
+          </Link>
+        </li>
         <li id="navbar-donate">
           <Link to="https://donorbox.org/change-arts-donation" target="_blank">
             <img src={donate} alt="donate icon" />
