@@ -1,0 +1,116 @@
+.search {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #1abc9c;
+    background-image: url('../../assets/unsplash_Oqv_bQbZgS8.jpg');
+    height: 250px;
+}
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    width: 873px;
+    height: 194px;
+    pointer-events: none;
+}
+
+.button-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-button {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0);
+    border: none;
+    position: relative;
+    flex-shrink: 0;
+    top: 0px;
+    left: 0px;
+    height: 80px;
+    width: 211px;
+    border-radius: 25px;
+    transform: translate(134px, 0px);
+    background-color: #E0E0E0;
+    z-index: 0;
+    pointer-events: auto;
+    align-items: center;
+}
+
+.tab-button.clicked {
+    width: 169px;
+    transform: translate(0%, 0px);
+}
+
+.input-container {
+    margin-top: 25px;
+    align-self: center;
+    pointer-events: auto;
+}
+
+
+.arts-event-gray-tab {
+    width: 169px;
+    height: 85px;
+    border-radius: 25px;
+}
+
+.teaching-artist-gray-tab {
+    width: 211px;
+    height: 80px;
+    border-radius: 25px;
+    background-color: #E0E0E0;
+}
+
+.page-container-without-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-container-without-filter {
+    width: 1020px;
+}
+
+
+.search-input {
+    border: 1px;
+    outline: 1px;
+    width: 729px;
+    height: 52px;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #000;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 50px;
+
+}
+
+.search-button {
+    background: #5B5A61;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 166px;
+    height: 54px;
+    margin-left: -166px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+};

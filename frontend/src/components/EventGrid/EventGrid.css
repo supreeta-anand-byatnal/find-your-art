@@ -1,6 +1,6 @@
 .event-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
     gap: 28px;
 }

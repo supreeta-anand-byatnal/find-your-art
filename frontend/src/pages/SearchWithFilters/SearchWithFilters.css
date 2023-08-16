@@ -13,9 +13,13 @@
     height: 250px;
 }
 
-.page-container {
+.page-container-with-filter {
     display: flex;
     flex-direction: row;
+}
+
+.event-container-with-filter {
+    width: 900px;
 }
 
 .filter-container {

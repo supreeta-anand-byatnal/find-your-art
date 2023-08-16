@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./Search.css";
+import "./SearchWithFilters.css";
 import SearchFilters from '../../components/SearchFilters/SearchFilters';
 import EventGrid from '../../components/EventGrid/EventGrid';
 
@@ -37,7 +37,7 @@ const defaultFilter = {
   }
 }
 
-export default function Search() {
+export default function SearchWithFilters() {
   const [searchInput, setSearchInput] = useState('');
   const [filter, setFilter] = useState(defaultFilter);
 
@@ -65,13 +65,13 @@ export default function Search() {
           className="search-button"
           onClick={() => handleSearch(searchInput)}>Search</button>
       </div>
-      <div className="page-container">
+      <div className="page-container-with-filter">
         <div className='filter-container'>
           <SearchFilters name='filters' filter={filter} setFilter={setFilter} defaultFilter={defaultFilter} handleApply={handleApply}></SearchFilters>
         </div>
-        <>
-          <EventGrid></EventGrid>
-        </>
+        <div className='event-container-with-filter'>
+          <EventGrid numResults={12}></EventGrid>
+        </div>
       </div>
     </div>
   );
