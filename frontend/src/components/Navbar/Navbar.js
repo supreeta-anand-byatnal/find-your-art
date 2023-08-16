@@ -10,9 +10,13 @@ export default function Navbar() {
       <img src={logo} alt="fya logo" />
       <ul>
         <li>Explore</li>
-        <li>Partners</li>
         <li>
-        <Link to="https://www.changearts.org/contactandfaq" target="_blank">
+          <Link to="https://www.changearts.org/classroomsandcommunities" target="_blank">
+            Partners
+          </Link>
+        </li>
+        <li>
+          <Link to="https://www.changearts.org/contactandfaq" target="_blank">
             FAQs
           </Link>
         </li>
