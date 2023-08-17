@@ -47,11 +47,13 @@ function App() {
   }
 
   function handleLoginRequest() {
-    users.login(loginData);
+    users.login(loginData)
+      .then(data => console.log(data));
   }
 
   function handleSignUpRequest() {
-    users.signUp(signUpData);
+    users.signUp(signUpData)
+      .then(data => console.log(data));
   }
 
   // Sample data for suggestion cards
