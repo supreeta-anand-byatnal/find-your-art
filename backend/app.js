@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(morgan('tiny'))
 const cors = require('cors')
 app.use(cors())
-app.use(express.static('dist'))
+app.use(express.static('build'))
 
 // For testing only
 app.get('/', (req, res) => {
