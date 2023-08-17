@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fd991795.css",
+    "main.js": "/static/js/main.6b53d9eb.js",
+    "static/media/sample_event_card3.jpeg": "/static/media/sample_event_card3.3ca65e9b2380af50b7fb.jpeg",
+    "static/media/sample_event_card1.jpeg": "/static/media/sample_event_card1.8c1e81ac13b5c1b63eee.jpeg",
+    "static/media/sample_event_card2.jpeg": "/static/media/sample_event_card2.17a442e25f12d2273941.jpeg",
+    "static/media/Vector.png": "/static/media/Vector.78d2a9b6faca881a762a.png",
+    "static/media/fya-logo.svg": "/static/media/fya-logo.e9c22bf9e398f7e1c536a1ddd00d8782.svg",
+    "static/media/apple-icon.svg": "/static/media/apple-icon.0d7d7099a35dad59d3448c47beaa5c8f.svg",
+    "static/media/X.svg": "/static/media/X.5c22c70d8ddda2ed2c97a6e13489dc31.svg",
+    "static/media/google-icon.svg": "/static/media/google-icon.2f16c1e05031925dc16b5bf17041f164.svg",
+    "static/media/locksimple.svg": "/static/media/locksimple.2efe4790eef0915a5414.svg",
+    "static/media/envelopesimple.svg": "/static/media/envelopesimple.33294a2b85c4c311184e.svg",
+    "static/media/facebook-icon.svg": "/static/media/facebook-icon.4847d40b67104a575174450f9d555e37.svg",
+    "index.html": "/index.html",
+    "main.fd991795.css.map": "/static/css/main.fd991795.css.map",
+    "main.6b53d9eb.js.map": "/static/js/main.6b53d9eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd991795.css",
+    "static/js/main.6b53d9eb.js"
+  ]
+}
