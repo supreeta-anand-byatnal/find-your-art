@@ -14,8 +14,8 @@ app.use(cors())
 app.use(express.static('build'))
 
 // For testing only
-app.get('/', (req, res) => {
-    res.send('Hello, World!');
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(__dirname+'/build/','index.html'));
 });
 app.use('/auth', authRoutes);
 app.use('/user', userRoutes);
