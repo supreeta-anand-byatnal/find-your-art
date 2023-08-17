@@ -3,5 +3,10 @@
     "id": 1,
     "loginEmail": "human",
     "loginPassword": "$2b$10$o3lx.ituNZ9.Lkcg/lxo8.BFxLkgs.y24cxgP685kQMR3Ut4ZmSC."
+  },
+  {
+    "id": 2,
+    "signUpEmail": "",
+    "signUpPassword": "$2b$10$BN9NHgykb99zz6HpnBc5/.Pg5RAaJXdpWk6dh5GTrLoa40vESojZ6"
   }
 ]
