@@ -48,12 +48,16 @@ function App() {
 
   function handleLoginRequest() {
     users.login(loginData)
-      .then(data => console.log(data));
+      .then(data => console.log(data))
+      .catch(error => console.log(error))
   }
 
   function handleSignUpRequest() {
     users.signUp(signUpData)
-      .then(data => console.log(data));
+      .then(data => {
+        console.log(data)
+      })
+      .catch(error => console.log(error))
   }
 
   // Sample data for suggestion cards
