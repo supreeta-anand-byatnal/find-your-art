@@ -1,0 +1,12 @@
+.container {
+    margin-left: -41px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.label {
+}
+
+.checkbox {
+}

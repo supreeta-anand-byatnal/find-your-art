@@ -1,6 +1,8 @@
 import './App.css';
-import { Routes } from 'react-router-dom';
-import Footer from './components/Footer/Footer';
+import { Route, Routes } from "react-router-dom";
+import EventCard from './components/EventCard/EventCard';
+import SearchWithFilters from './pages/SearchWithFilters/SearchWithFilters';
+import SearchWithoutFilters from './pages/SearchWithoutFilters/SearchWithoutFilters';
 import SuggestionCard from './components/SuggestionCard/SuggestionCard';
 import imgsrc1 from './assets/sample_event_card1.jpeg'
 import imgsrc2 from './assets/sample_event_card2.jpeg'
@@ -8,7 +10,6 @@ import imgsrc3 from './assets/sample_event_card3.jpeg'
 import AccountRoutes from "./routes/AccountRoutes";
 import { useState } from "react";
 import users from './modules/users'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Verification from './components/Verification/Agreement/Agreement';
 import Review from './components/Verification/Review/Review';
 import Upload from './components/Verification/Upload/Upload';
@@ -95,6 +96,15 @@ function App() {
         <Route path='/review' Component={Review}></Route>
         <Route path='/upload' Component={Upload}></Route>
         <Route path="/event" Component={Event}></Route>
+      </Routes>
+      <Routes>
+        <Route path="/searchwithfilters" element={<SearchWithFilters />}></Route>
+      </Routes>
+      <Routes>
+        <Route path="/searchwithoutfilters" element={<SearchWithoutFilters />}></Route>
+      </Routes>
+      <Routes>
+        <Route path="/eventcard" element={<EventCard />}></Route>
       </Routes>
       <AccountRoutes
         loginData={loginData}
