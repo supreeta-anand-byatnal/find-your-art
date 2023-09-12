@@ -10,6 +10,8 @@ export default function DoubleField({
   inputType,
   leftInputPH,
   rightInputPH,
+  signUpData,
+  handleSignUpInput
 }) {
   return (
     <div id="double-field">
@@ -18,12 +20,16 @@ export default function DoubleField({
         inputID={leftInputID}
         inputType={inputType}
         inputPH={leftInputPH}
+        inputValue={signUpData.leftInputID}
+        handleInputChange={handleSignUpInput}
       />
       <SingleField
         inputTitle={rightInputTitle}
         inputID={rightInputID}
         inputType={inputType}
         inputPH={rightInputPH}
+        inputValue={signUpData.rightInputID}
+        handleInputChange={handleSignUpInput}
       />
     </div>
   );

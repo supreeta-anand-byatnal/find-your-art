@@ -1,0 +1,62 @@
+.event-card {
+    display: flex;
+    flex-direction: column;
+    width: 233px;
+    height: 256px;
+    background-color: white;
+    border-radius: 14px;
+    gap: 7px;
+}
+
+.event-picture {
+    width: 233px;
+    height: 141px;
+    border-radius: 7px;
+    background-color: aquamarine;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.event-title {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+}
+
+.event-date {
+    font-weight: 500;
+    font-size: 11.3px;
+    color: #7B61FF;
+    margin-top: -5px;
+    margin-bottom: 0px;
+}
+
+.event-organization {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+
+}
+
+.event-format {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -5px;
+    margin-bottom: 0px;
+}
+
+.event-services {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1877F2;
+    margin: 0;
+}

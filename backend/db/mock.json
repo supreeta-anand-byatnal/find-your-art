@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "username": "human",
-    "password": "$2b$10$o3lx.ituNZ9.Lkcg/lxo8.BFxLkgs.y24cxgP685kQMR3Ut4ZmSC."
+    "loginEmail": "human",
+    "loginPassword": "$2b$10$o3lx.ituNZ9.Lkcg/lxo8.BFxLkgs.y24cxgP685kQMR3Ut4ZmSC."
   }
 ]
