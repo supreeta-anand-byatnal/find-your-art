@@ -13,6 +13,8 @@ import Verification from './components/Verification/Agreement/Agreement';
 import Review from './components/Verification/Review/Review';
 import Upload from './components/Verification/Upload/Upload';
 
+import Event from './pages/Event/Event';
+
 function App() {
   const [loginData, setLoginData] = useState({
     loginEmail: "",
@@ -92,6 +94,7 @@ function App() {
         <Route path='/verify' Component={Verification}></Route>
         <Route path='/review' Component={Review}></Route>
         <Route path='/upload' Component={Upload}></Route>
+        <Route path="/event" Component={Event}></Route>
       </Routes>
       <AccountRoutes
         loginData={loginData}
