@@ -1,0 +1,98 @@
+.button {
+    align-items: center;
+    border-radius: 32px;
+    display: inline-flex;
+    gap: 8px;
+    height: 48px;
+    background-color: #494847;
+    justify-content: center;
+    position: relative;
+  }
+
+  .verification-info .button-instance:hover {
+ 
+    background-color :#1c1b1a;;
+    border: #000000;
+    color: white;
+  
+  }
+  
+  .button .div {
+    font-family: "DM Sans-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .button.design-component-instance-node:hover {
+    cursor: pointer; 
+    opacity: 0.8; 
+   
+  }
+  .button.secondary {
+    border: 2px solid;
+    border-color: #494847;
+    padding: 0px 24px;
+  }
+  
+  .button.disabled {
+    opacity: 0.6;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .button.primary {
+    padding: 0px 24px;
+    opacity: 0.9;
+  }
+  
+  .button.primary.pressed {
+    background-color: #1c1b1a;
+    opacity: 0.9;
+  }
+  
+  .button.primary.disabled {
+    background-color: #494847;
+  }
+  
+  .button.secondary.default {
+    background-color: #ffffff;
+  }
+  
+  .button.primary.hover {
+    background-color: #353432;
+  }
+  
+  .button.secondary.hover {
+    background-color: #f3f2f1;
+  }
+  
+  .button.secondary.pressed {
+    background-color: #e2e0dd;
+  }
+  
+  .button.secondary.disabled {
+    background-color: #ffffff;
+  }
+  
+  .button.primary.default {
+    background-color: #494847;
+  }
+  
+  .button.tertiary .div {
+    color: #494847;
+  }
+  
+  .button.secondary .div {
+    color: #494847;
+  }
+  
+  .button.primary .div {
+    color: #ffffff;
+  }
+  
