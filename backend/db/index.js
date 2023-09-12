@@ -9,12 +9,12 @@ require('dotenv').config();
 const DB_URI = process.env.DB_URI;
 
 const connectDB = async () => {
-    try {
-        // Connect to the MongoDB cluster
-        await mongoose.connect(DB_URI);
-        console.log("Connected");
+  try {
+    // Connect to the MongoDB cluster
+    await mongoose.connect(DB_URI);
+    console.log('Connected');
 
-        /*
+    /*
         //insert an Educator
         const e1 = new Educator({
             profilePicture: Buffer,
@@ -39,14 +39,13 @@ const connectDB = async () => {
           console.error('Error creating user:', err);
         });
         */
+  } catch (e) {
+    console.log('Could not connect');
+  } finally {
+    //await mongoose.disconnect();
+  }
+};
 
-    } catch (e) {
-        console.log("Could not connect");
-    } finally {
-        //await mongoose.disconnect();
-    }
-}
-
-connectDB().catch(err => console.log(err));
+connectDB().catch((err) => console.log(err));
 
 module.exports = connectDB;
