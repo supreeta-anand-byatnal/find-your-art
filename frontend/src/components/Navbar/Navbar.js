@@ -9,11 +9,26 @@ export default function Navbar() {
     <nav id="navbar-container">
       <img src={logo} alt="fya logo" />
       <ul>
-        <li>Explore</li>
-        <li>Partners</li>
-        <li>FAQs</li>
+        <li>
+          <Link to="/home">
+            Explore
+          </Link>
+        </li>
+        <li>
+          <Link to="https://www.changearts.org/classroomsandcommunities" target="_blank">
+            Partners
+          </Link>
+        </li>
+        <li>
+          <Link to="https://www.changearts.org/contactandfaq" target="_blank">
+            FAQs
+          </Link>
+        </li>
         <li id="navbar-donate">
-          <img src={donate} alt="donate icon" /> Donate
+          <Link to="https://donorbox.org/change-arts-donation" target="_blank">
+            <img src={donate} alt="donate icon" />
+            <p>Donate</p>
+          </Link>
         </li>
       </ul>
       <div id="navbar-button-container">

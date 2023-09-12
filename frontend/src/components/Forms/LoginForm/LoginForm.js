@@ -6,27 +6,42 @@ import apple from '../../../assets/apple-icon.svg';
 import { Link } from 'react-router-dom';
 import SingleField from '../SingleField/SingleField'
 
-export default function Login() {
+export default function Login({ loginData, handleLoginInput, handleLoginRequest }) {
+  function handleClick(e) {
+    handleLoginRequest(loginData);
+    handleLoginInput({
+      loginEmail: "",
+      loginPassword: "",
+    });
+    e.preventDefault();
+  }
+
   return (
     <div className="form">
       <h1>Have an account? Log in.</h1>
       <form>
         <SingleField
           inputTitle="Email"
-          inputID="login-email"
+          inputID="loginEmail"
           inputClass="form-email icon-input"
           inputType="email"
           inputPH="hello@email.com"
+          inputValue={loginData.loginEmail}
+          handleInputChange={handleLoginInput}
         />
         <SingleField
           inputTitle="Password"
-          inputID="login-password"
+          inputID="loginPassword"
           inputClass="form-password icon-input"
           inputType="password"
           inputPH="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+          inputValue={loginData.loginPassword}
+          handleInputChange={handleLoginInput}
         />
         <p id="login-forgot-password">Forgot password?</p>
-        <button className="form-submit">Log in</button>
+        <button className="form-submit" onClick={(e) => handleClick(e)}>
+          Log in
+        </button>
         <p className="form-separator">
           <span>OR</span>
         </p>
