@@ -8,21 +8,23 @@ const fakeUserDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf8'));
 
 // POST auth/login
 const login = async (req, res) => {
-    const { username, password } = req.body;
+    const { loginEmail, loginPassword } = req.body;
+    console.log(req.body)
   
-    // Find the user with the provided username
-    const user = fakeUserDB.find((u) => u.username === username);
+    // Find the user with the provided loginEmail
+    const user = fakeUserDB.find((u) => u.loginEmail === loginEmail);
 
     if (!user) {
         return res.status(401).json({ error: 'User not found' });
     }
 
     try {
-        // Compare the provided password with the hashed password from the database
-        const passwordMatches = await bcrypt.compare(password, user.password);
+        // Compare the provided loginPassword with the hashed loginPassword from the database
+        const loginPasswordMatches = await bcrypt.compare(loginPassword, user.loginPassword);
 
-        if (passwordMatches) {
-        res.json({ message: 'Login successful', user: { id: user.id, username: user.username } });
+        if (loginPasswordMatches) {
+            console.log("hi")
+        res.json({ message: 'Login successful', user: { id: user.id, loginEmail: user.loginEmail } });
         } else {
         res.status(401).json({ error: 'Invalid credentials' });
         }

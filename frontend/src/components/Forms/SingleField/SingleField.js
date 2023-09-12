@@ -7,7 +7,13 @@ export default function SingleField({
   inputClass = "",
   inputType,
   inputPH,
+  inputValue,
+  handleInputChange,
 }) {
+  function handleChange(value) {
+    handleInputChange({ [inputID]: value });
+  }
+
   return (
     <div id="single-field">
       <label for={inputID}>{inputTitle}</label>
@@ -16,6 +22,8 @@ export default function SingleField({
         className={inputClass}
         type={inputType}
         placeholder={inputPH}
+        value={inputValue}
+        onChange={(e) => handleChange(e.target.value)}
       ></input>
     </div>
   );

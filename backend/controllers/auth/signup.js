@@ -11,24 +11,25 @@ const writeUsers = (users) => {
 
 // POST auth/signup
 const signup = async (req, res) => {
-    const { username, password } = req.body;
+    const { signUpEmail, signUpPassword } = req.body;
+    console.log(req.body)
     
-    // Check if the username already exists
-    const existingUser = fakeUserDB.find((user) => user.username === username);
+    // Check if the signUpEmail already exists
+    const existingUser = fakeUserDB.find((user) => user.signUpEmail === signUpEmail);
     if (existingUser) {
       return res.status(409).json({ error: 'Username already exists' });
     }
 
     try {
-        // Hash the password using bcrypt before storing it
+        // Hash the signUpPassword using bcrypt before storing it
         const saltRounds = 10;
-        const hashedPassword = await bcrypt.hash(password, saltRounds);
+        const hashedPassword = await bcrypt.hash(signUpPassword, saltRounds);
     
         // Create a new user
         const newUser = {
           id: fakeUserDB.length + 1,
-          username: username,
-          password: hashedPassword,
+          signUpEmail: signUpEmail,
+          signUpPassword: hashedPassword,
         };
     
         fakeUserDB.push(newUser);

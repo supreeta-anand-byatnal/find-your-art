@@ -1,35 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import google from '../../assets/google-icon.svg';
 import facebook from '../../assets/facebook-icon.svg';
 import apple from '../../assets/apple-icon.svg';
 import { Link } from 'react-router-dom';
 import SingleField from './SingleField/SingleField';
 
-export default function SignupForm() {
+export default function SignupForm({signUpData, handleSignUpInput, handleSignUpRequest}) {
   return (
     <div className="form">
       <h1>Create your account.</h1>
       <form>
         <SingleField
           inputTitle="Email"
-          inputID="signup-email"
+          inputID="signUpEmail"
           inputClass="form-email icon-input"
           inputType="email"
           inputPH="hello@email.com"
+          inputValue={signUpData.signUpEmail}
+          handleInputChange={handleSignUpInput}
         />
         <SingleField
           inputTitle="Password"
-          inputID="signup-password"
+          inputID="signUpPassword"
           inputClass="form-password icon-input"
           inputType="password"
           inputPH="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+          inputValue={signUpData.signUpPassword}
+          handleInputChange={handleSignUpInput}
         />
         <SingleField
           inputTitle="Confirm Password"
-          inputID="signup-password"
+          inputID="signUpConfirm"
           inputClass="form-password icon-input"
           inputType="password"
           inputPH="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+          inputValue={signUpData.signUpConfirm}
+          handleInputChange={handleSignUpInput}
         />
         <Link to="/signup/role">
           <button className="form-submit">Sign up</button>

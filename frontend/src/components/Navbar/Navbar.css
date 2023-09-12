@@ -46,10 +46,22 @@
   border: 2px solid #494847; 
 }
 
-#navbar-donate {
+#navbar-donate a {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #d33d6c;
   gap: 0.5rem;
+}
+
+#navbar-donate p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  color: #d33d6c;
+}
+
+#navbar-container a {
+  text-decoration: none;
+  color: #494847;
 }

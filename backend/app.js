@@ -9,6 +9,8 @@ const app = express()
 
 app.use(express.json())
 app.use(morgan('tiny'))
+const cors = require('cors')
+app.use(cors())
 
 // For testing only
 app.get('/', (req, res) => {
